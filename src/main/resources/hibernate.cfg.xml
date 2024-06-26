@@ -1,0 +1,70 @@
+<!-- The following doctype doesn't work when offline, so default to old one, which does work.
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">-->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.apollon.model.User"/>
+        <mapping class="com.apollon.model.Role"/>
+        <mapping class="com.apollon.model.TipoRuoli"/>
+        <mapping class="com.apollon.model.Autista"/>
+        <mapping class="com.apollon.model.Autoveicolo"/>
+        <mapping class="com.apollon.model.NumeroPostiAuto"/>
+        <mapping class="com.apollon.model.Regioni"/>
+        <mapping class="com.apollon.model.Province"/>
+        <mapping class="com.apollon.model.Comuni"/>
+        <mapping class="com.apollon.model.ComuniFrazioni"/>
+        <mapping class="com.apollon.model.Aeroporti"/>
+        <mapping class="com.apollon.model.PortiNavali"/>
+        <mapping class="com.apollon.model.Musei"/>
+        <mapping class="com.apollon.model.AutistaAeroporti"/>
+        <mapping class="com.apollon.model.AutistaPortiNavali"/>
+        <mapping class="com.apollon.model.AutistaMusei"/> 
+        <mapping class="com.apollon.model.AutistaZone"/>
+        <mapping class="com.apollon.model.ZoneGiornataCompleta"/>
+        <mapping class="com.apollon.model.ZoneLungaPercorrenza"/>
+        <mapping class="com.apollon.model.ZoneMatrimoni"/>
+        <mapping class="com.apollon.model.Tariffe"/>
+        <mapping class="com.apollon.model.TariffeValori"/>
+        <mapping class="com.apollon.model.Disponibilita"/>
+        <mapping class="com.apollon.model.DisponibilitaDate"/>
+        <mapping class="com.apollon.model.RicercaTransfert"/>
+        <mapping class="com.apollon.model.RichiestaAutistaParticolare"/>
+        <mapping class="com.apollon.model.RichiestaMedia"/>
+        <mapping class="com.apollon.model.RichiestaMediaAutista"/>
+        <mapping class="com.apollon.model.RichiestaMediaAutistaAutoveicolo"/>
+        <mapping class="com.apollon.model.GestioneApplicazione"/>
+        <mapping class="com.apollon.model.Visitatori"/>
+        <mapping class="com.apollon.model.BackupInfoUtente"/>
+        <mapping class="com.apollon.model.Fatture"/>
+        <mapping class="com.apollon.model.AutistaLicenzeNcc"/>
+        <mapping class="com.apollon.model.AutistaSottoAutisti"/>
+        <mapping class="com.apollon.model.DocumentiCap"/>
+        <mapping class="com.apollon.model.DocumentiPatente"/>
+        <mapping class="com.apollon.model.DocumentiIscrizioneRuolo"/>
+        <mapping class="com.apollon.model.DocumentiCartaIdentita"/>
+        <mapping class="com.apollon.model.Ritardi"/>
+        <mapping class="com.apollon.model.MarcaAutoScout"/>
+        <mapping class="com.apollon.model.ModelloAutoScout"/>
+		<mapping class="com.apollon.model.ClasseAutoveicolo"/>
+        <mapping class="com.apollon.model.MacroRegioni"/>
+        <mapping class="com.apollon.model.ModelloAutoNumeroPosti"/>
+        <mapping class="com.apollon.model.AgenzieViaggioBit"/>
+        <mapping class="com.apollon.model.DistanzeProvinceInfrastrutture"/>
+        <mapping class="com.apollon.model.VenditorePercServProvincia"/>
+        <mapping class="com.apollon.model.ListaInvioEmailSms"/>
+        <mapping class="com.apollon.model.Supplementi"/>
+        <mapping class="com.apollon.model.Nazioni"/>
+        <mapping class="com.apollon.model.AgA_AutoveicoloModelliTariffari"/>
+        <mapping class="com.apollon.model.AgA_ModelliTariffari"/>
+        <mapping class="com.apollon.model.AgA_AutoveicoloModelliGiornate"/>
+        <mapping class="com.apollon.model.AgA_ModelliGiornate"/>
+        <mapping class="com.apollon.model.AgA_Giornate"/>
+        <mapping class="com.apollon.model.AgA_Tariffari"/>
+        <mapping class="com.apollon.model.Comunicazioni"/>
+		<mapping class="com.apollon.model.ComunicazioniUser"/>
+		<mapping class="com.apollon.model.CoordGeoProvince"/>
+    </session-factory>
+</hibernate-configuration>

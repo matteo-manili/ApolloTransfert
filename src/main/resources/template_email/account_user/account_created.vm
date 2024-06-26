@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Profilo Creato</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<html>
+	<body>
+		<h3>Salve, ${user.fullName}</h3>
+	
+		<h3>${message}</h3>
+		
+		<h4>
+			<p>
+				username: ${user.email} <br>
+				password: ${password} 
+			</p>
+			<p>
+				${applicationURL}
+			</p>
+		</h4>
+		
+		#if ($INCLUDE_AUTISTA_INFO)
+			<hr>
+			<p><big>Con la presente la aggiorniamo sulle Ultime Vendite e le Ricerche effettuate dai Clienti.</big></p>
+			$INCLUDE_AUTISTA_INFO
+		#end
+		
+		$INCLUDE_FOOTER_EMAIL
+		
+	</body>
+</html>

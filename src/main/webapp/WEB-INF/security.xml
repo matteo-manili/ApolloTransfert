@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+              http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <http pattern="/images/**" security="none"/>
+    <http pattern="/scripts/**" security="none"/>
+    <http pattern="/assets/**" security="none"/>
+    <!-- nuova grafica  -->
+    <http pattern="/agenda-autista/**" security="none"/>
+    <http pattern="/js/**" security="none"/>
+	<http pattern="/css/**" security="none"/>
+	<http pattern="/fonts/**" security="none"/>
+	<http pattern="/nuova_grafica/**" security="none"/>
+    <http pattern="/consigli-viaggio-grafica/**" security="none"/>
+
+    <http auto-config="true">
+    	<!-- requires-channel="https" questo aggiunto agli attributi di intercept-url forza la chiamata al https:// -->
+    	<!-- VERIFICA GOOGLE googlee29bdebc24b34eb4.html -->
+    	<intercept-url pattern="/app/googlee29bdebc24b34eb4.html" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    
+    	<!-- DOMINIO PUBBLICO -->
+    	<intercept-url pattern="/app/proveLoginGoogle" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/prove" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/provews" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/passwordHint*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+        <intercept-url pattern="/app/requestRecoveryToken*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER" />
+        <intercept-url pattern="/app/updatePassword*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER" />
+        <intercept-url pattern="/app/recoverpass*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+        <!-- (questo link è presente in alcune email che ho inviato alle email marketing e su google adWords) -->
+        <intercept-url pattern="/app/submit-news-letter" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+        <intercept-url pattern="/app/chiamatasocket*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+        <intercept-url pattern="/app/scrivi-recensione*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/contatti" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/prenota-corsa" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/visualizza-corsa-cliente" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/tariffe-autisti*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/unsubscribe" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+		<intercept-url pattern="/app/preventivo-corsa" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+		<intercept-url pattern="/app/lista-preventivi-cliente" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/corsa-agenda-autista" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/consigli-di-viaggio" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	
+    	<!-- DOMINIO INTERNO -->
+    	<intercept-url pattern="/app/insert-autoveicolo*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/insert-tragitti*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/insert-tariffe*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/insert-disponibilita*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/insert-collaboratori*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/pdfDownloadFattura*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/><!-- metto ROLE_ANONYMOUS perke scaricabile anche dalle richieste token autista -->
+    	<intercept-url pattern="/app/pdfDownloadContratto*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/getFileAmazonStore*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/insert-documenti*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/pdfDownloadFatturaRitardo*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/pdfDownloadFatturaSupplemento*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/pagamentoRitardo*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/pagamentoSupplemento*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/gestioneRimborsoCliente*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/pdfDownloadFatturaCommercialista*" access="ROLE_ADMIN,ROLE_COMMERCIALISTA"/>
+    	
+    	<!-- CHIAMATE AJAX -->
+    	<intercept-url pattern="/app/marcaAutoveicolo*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/modelloAutoveicolo*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/listaZoneChosen*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/impostaDisponibilita" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/autocompleteGoogleMatrix*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/autocompleteComuni*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/autocompleteProvince*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/autocompleteRegioni*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/homeTableAeroporti*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/homeTablePorti*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/homeTableMusei*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/localizzaPosizione*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/inviaSMSCustomer*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/caricaGestioneCorseAdmin*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/impostaApprovazioneCorsaAdmin*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/impostaCollapsePanelCorsaAdmin*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/assegnaDisdiciCorsaAutistaAdmin*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/inviaSMSCorsaDisponibileAutista*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/controlloDisdettaCorsaMediaAutista*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/controlloDisdettaCorsaCliente*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/disdiciCorsaMediaAutista*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/prenotaCorsaMediaAutista*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/togliPrenotaCorsaMediaAutista*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/scriviNoteCorseAdmin*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/dammiInfoCliente*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/dammiInfoAutista*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/controlloPrePayment*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/GetClientSecretStripe" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/SalvaEmailClienteRiepilogo" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/autocompleteModelliAutoScout*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/autocompleteMarcheAutoScout*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/impostaTariffaProvincia*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/inviaSmsCorsaCliente*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/inviaEmailCorsaCliente*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/checkFatturaDisponibile" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/><!-- metto ROLE_ANONYMOUS perke scaricabile anche dalle richieste token autista -->
+    	<intercept-url pattern="/app/checkFatturaRitardoDisponibile*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/checkFatturaSupplementoDisponibile*" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/CollaboratoriRegioneAutistaList" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/CollaboratoriProvinciaAutistaList" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/CollaboratoriInfoCorsaMedia" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/memorizzaIpUtente" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/inserisciRitardoCorsaAdmin" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/modificaDatiPasseggeroCorsa" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/inviaEmailCorsaAcquistataCliente" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/modificaTransfer" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/impostaPercentualeProvinciaVenditore" access="ROLE_VENDITORE,ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/pdfDownloadFatturaVenditoreTest" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/setTokenDeviceFcm" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/setPreventivoPeriodoValidita" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/setPreventivoPrezzo" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/inviaPreventivoClienteCorsaParticolare*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/cancellaAttivaRicezionePreventiviCliente*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	
+    	<!-- DOMINIO INTERNO ADMIN e GEST_AUTISTA e GEST_AUTISTA e COMMERCIALISTA -->
+    	<intercept-url pattern="/app/admin/admin-tableAeroporti*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-tablePortiNavali*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-tableMusei*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-tableComuni*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-tableProvince*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-tableGestioneApplicazione*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-tableVisitatori*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/userform-admin*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/users*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/gestioneAutista*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-gestioneCorse*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-tableRicercheTransfert*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-gestioneRitardi*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-gestioneRimborsi*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-tableModelloAutoveicolo*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-chatZendesk*" access="ROLE_ADMIN,ROLE_GEST_AUTISTA"/>
+    	<intercept-url pattern="/app/admin/admin-vediFatture*" access="ROLE_ADMIN,ROLE_COMMERCIALISTA"/>
+    	<intercept-url pattern="/app/admin/admin-modificaTransfer*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/admin/admin-recensioni*" access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/app/contatti-marketing" access="ROLE_ADMIN,ROLE_VENDITORE"/>
+    	<intercept-url pattern="/app/admin/admin-gestioneSupplementi*" access="ROLE_ADMIN"/>
+    	
+
+		<!-- ************************************** REST AGENDA AUTISTA **************************************  -->
+		<!-- Login - Authentication - Autista -->
+    	<intercept-url pattern="/app/api_Autista_ListaAutoveicoliAutista" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Authentication_VerificaJwtInfoJwt" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<!-- Modello Giornata -->
+    	<intercept-url pattern="/app/api_ModelGiornata_Tariffario_Menu" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_ModelGiornata_TabellaGiornataModello" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_ModelGiornata_ModelGiornata_UpdateOrario" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_ModelGiornata_ModelGiornata_ModificaNome" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_ModelGiornata_ModelGiornata_Nuovo" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_ModelGiornata_ModelGiornata_Elimina" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_ModelGiornata_ModelGiornata_Lista" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<!-- Modello Tariffario -->
+    	<intercept-url pattern="/app/api_ModelTariffario_TabellaKilometriModello" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+		<intercept-url pattern="/app/api_ModelTariffario_ModelTariff_UpdateKmCorsa" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+		<intercept-url pattern="/app/api_ModelTariffario_ModelTariff_ModificaNome" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+		<intercept-url pattern="/app/api_ModelTariffario_ModelTariff_Nuovo" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+		<intercept-url pattern="/app/api_ModelTariffario_ModelTariff_Elimina" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+		<intercept-url pattern="/app/api_ModelTariffario_ModelTariff_Lista" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<!-- Tariffario -->
+    	<intercept-url pattern="/app/api_Tariffario_GiornataOrario_TabellaKilometri" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Tariffario_GiornataOrario_UpdateKmCorsa" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<!-- Giornata -->
+    	<intercept-url pattern="/app/api_Giornata_ModelliGiornata_Menu" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Giornata_ApplicaModelloGiornata" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Giornata_CancellaGiornata" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Giornata_GiornataOrario_ListaGiornata" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Giornata_GiornataOrario_UpdateOrario" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Giornata_GiornataOrario_Menu" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<!-- Calendario -->
+    	<intercept-url pattern="/app/api_Calendario_Set_AutoClearProssimeOreGiornate" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Calendario_Get_AutoClearProssimeOreGiornate" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Calendario_GiornoCalendario" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Calendario_MeseCalendario" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_Calendario_Giornata_Menu" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<!-- Area Geografica -->
+    	<intercept-url pattern="/app/api_AreaGeografica_Set_LatLngRaggioAddress" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/api_AreaGeografica_Get_LatLngRaggioAddress" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+		<!-- Menu -->
+		<intercept-url pattern="/app/api_Menu" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+
+
+    	<!-- MULTILANGUAGE URL -->
+    	
+    	<intercept-url pattern="/app/*/home-user" access="ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/*/userform" access="ROLE_ADMIN,ROLE_USER"/>
+		<intercept-url pattern="/app/*/contatti" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/*/tariffe-transfer*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/*/ncc-aziende" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	<intercept-url pattern="/app/*/signup*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_USER"/>
+    	
+    	
+    	<!-- GENERAL -->
+    	<intercept-url pattern="/app/*/" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	<intercept-url pattern="/app/*/*" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+    	
+
+		<!--  
+        <intercept-url pattern="/app/" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/>
+        <intercept-url pattern="/app/**" access="ROLE_ANONYMOUS,ROLE_ADMIN,ROLE_GEST_AUTISTA,ROLE_USER"/> -->
+        
+        <intercept-url pattern="/app/admin/**" access="ROLE_ADMIN"/>
+        
+        <form-login login-page="/login" login-processing-url="/j_security_check" authentication-success-handler-ref="authenticationSuccessHandler" 
+        	authentication-failure-handler-ref="authenticationFailureHandler" />  
+	        
+	        <!-- 
+	        <form-login default-target-url="/home-user" login-page="/login" authentication-failure-url="/login?error=true" 
+	        login-processing-url="/j_security_check" authentication-success-handler-ref="ajaxAuthenticationSuccessHandler" 
+	        authentication-failure-handler-ref="ajaxAuthenticationFailureHandler" 
+	        />  
+	        <cors configuration-source-ref="webSecurityConfigurerAdapter"/>  -->
+
+        <remember-me user-service-ref="userDao" key="e37f4b31-0c45-11dd-bd0b-0800200c9a66"/>
+    </http>
+
+    <authentication-manager>
+        <authentication-provider user-service-ref="userDao">
+            <password-encoder ref="passwordEncoder"/>
+        </authentication-provider>
+    </authentication-manager>
+
+
+    <!-- Override the default password-encoder (BCrypt) by uncommenting the following and changing the class -->
+    <!-- <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/> -->
+
+    <global-method-security>
+        <protect-pointcut expression="execution(* *..service.UserManager.getUsers(..))" access="ROLE_ADMIN"/>
+        <protect-pointcut expression="execution(* *..service.UserManager.removeUser(..))" access="ROLE_ADMIN"/>
+    </global-method-security>
+</beans:beans>

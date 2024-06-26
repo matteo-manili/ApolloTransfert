@@ -1,0 +1,23 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://directwebremoting.org/schema/dwr30.dtd">
+
+<dwr>
+    <allow>
+        <create creator="spring" javascript="UserManager">
+            <param name="class" value="com.apollon.service.UserManager"/>
+            <param name="beanName" value="userManager"/>
+            <include method="getUsers"/>
+        </create>
+        <convert converter="bean" match="com.apollon.model.User"/>
+    </allow>
+    
+	<allow>
+		<create creator="new" javascript="ReverseClass" scope="script">
+			<param name="class" value="com.apollon.util.dwr.ProvaDwr" />
+		</create>
+		<convert converter="bean" match="com.apollon.webapp.util.bean.MyBeanDwr" />
+	</allow>
+
+
+</dwr>

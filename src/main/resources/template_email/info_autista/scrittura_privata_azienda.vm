@@ -1,0 +1,56 @@
+<html>
+<head><title>Scrittura Privata</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- NON AGGIUNGERE TAG PARTICOLARI, QUESTO HTML DEVE ESSERE CONVERTITO IN UN PDF E DEVE ESSERE HTML SEMPLICE -->
+</head>
+<body style="font-family:Arial;">
+
+	#set( $partitaIvaDenominazione = $autista.autistaDocumento.partitaIvaDenominazione.replace("&", "&amp;") )
+
+	<p>Con la presente scrittura privata, valevole a tutti gli effetti di legge, tra le due parti si definisce il seguente Accordo mediato attraverso
+	il Servizio Web #msg("webapp.apollotransfert.name") di Propriet&agrave; della Ditta #msg("denominazione.ditta.apollotransfert") Partita Iva: #msg("partita.iva") sita in #msg("indirizzo.sede") e 
+	il Responsable Aziendale (denominato in seguito come "Responsabile") il Sig. ${nomeCognome} Patente Numero: ${autista.autistaDocumento.documentiPatente.numeroPatente} Denominazione 
+	Partita Iva: ${partitaIvaDenominazione} Partita Iva: ${autista.autistaDocumento.partitaIva} in una relazione 
+	professionale in cui il Responsabile Approva e Sottoscrive il seguente Regolamento:</p>
+	
+	<p><strong>DATI PERSONALI</strong><ul>
+	<li>Il Responsabile in riferimento alla legge 196/2003 autorizza espressamente l’utilizzo dei suoi dati personali e professionali.</li>
+	</ul></p>
+	
+	<p><strong>REGOLE GENERALI</strong><ul>
+	<li>#msg("webapp.apollotransfert.name") si avvale della facolt&agrave; di terminare la collaborazione con il Responsabile in qualsiasi momento.</li>
+	<li>Il Responsabile Conferma di eseguire e di fare eseguire le Corse solamente possedendo tutti i documenti in Regola e di disporre dell'Autorizzazione Comunale per il Servizio di Autoveuttura Con Conducente.</li>
+	<li>Il Responsabile ha l'obbligo di utilizzare solamente l'autoveicolo o gli autoveicoli che ha dichiarato e che sono stati approvati da #msg("webapp.apollotransfert.name").</li>
+	<li>Il Responsabile ha l'obbligo di fare eseguire le Corse solamente ai Dipendenti che ha dichiarato e che sono stati approvati da #msg("webapp.apollotransfert.name").</li>
+	</ul></p>
+
+	<p><strong>LA CORSA E COMPORTAMENTO TRA AUTISTA E CLIENTE</strong><ul>
+	<li>I Dipendenti e il Responsabile non chiederanno denaro in nessuna forma e per nessun motivo al Cliente.</li>
+	<li>Eventuali Ritardi del Cliente da inzio dell'orario di prelevamento saranno pagati all'autista al prezzo di ${prezzoRitardoCliete}&euro;(iva inclusa) - ogni 30 minuti.
+	Il metodo di pagamento del Ritardo sar&agrave; decisione del Cliente se eseguirlo direttamente all'autista oppure mediante #msg("webapp.apollotransfert.name"), 
+	nel secondo caso il costo del Ritardo sar&agrave; sommato al Compenso e dovr&agrave; essere comunicato ad #msg("webapp.apollotransfert.name").</li>
+	</ul></p>
+
+	<p><strong>FISCO</strong><ul>
+	<li>Il compenso e i dettagli di una Corsa sono stabiliti, senza alcuna possibilit&agrave; di modifica, dal portale #msg("webapp.apollotransfert.name") e comunicati via SMS e 
+		telematica al Responsabile. Il Responsabile confermando telematicamente l'accettazione della corsa non potr&agrave; richiedere variazioni al compenso.</li>
+	<li>Il Responsabile provveder&agrave; a inviare la riceveuta fiscale ad #msg("webapp.apollotransfert.name") in una settimana di tempo dal momento in cui ricever&agrave; il suo compenso.</li>
+	</ul></p>
+
+	<p><strong>MODALITA' DI FINE COLLABORAZIONE</strong><ul>
+	<li>Il Responsabile quando decider&agrave; di terminare la collaborazione con #msg("webapp.apollotransfert.name") potr&agrave; autonomamente rimuovere il suo profilo accedendo alle 
+	impostazioni e cliccando su "Elimina Account", ci&ograve; comporter&agrave; automaticamente la terminazione della Collaborazione.</li>
+	</ul></p>
+	<br/>
+	
+	IL GIORNO ____________________________ FIRMA ____________________________
+</body>
+</html>
+
+#macro(msg $key)
+$messages.DammiMessageSource($key, $locale)
+#end
+
+#macro(msgArgs $key, $args)
+$messages.DammiMessageSource($key, $args.toArray(), $locale)
+#end

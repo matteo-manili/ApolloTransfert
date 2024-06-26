@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Tariffe $webAppName</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<big>
+	<p>
+	<h3>Salve da <a target="_blank" href="https://www.apollotransfert.com">ApolloTransfert</a></h3>
+	</p>
+	
+	<p>
+	<strong>Gentile $nomeCognome</strong>, Siamo Lieti di Presentarti il nuovo <strong>Ambiente per Venditori</strong> dove potrai Guadagnare Provvigioni 
+		dalla vendita di Transfer.
+	</p>
+	
+	</big>
+	
+	<!--
+	<p>
+	Prossimamente Forniremo anche il Servizio "Tour" che a differenza del Servizio Transfer sar&agrave; venduto ad Ore, pensato appositamente per essere 
+	implementato nei Pacchetti Turistici. 
+	</p>
+	
+	<p>
+	Per Preventivare il Prezzo di uno specifico Transfer o per acquistarlo vai a questa pagina $linkPaginaHome
+	</p>
+	-->
+	
+	<p>
+	<strong>Queste di seguito sono le ultime Tariffe aggiornate per la Tua Provincia (esenti da Commissione Venditore)</strong>
+	</p>
+	
+	<ul>
+	#foreach( $obj in $transferTariffeProvince.tariffa_Province_e_Infrastrutture )
+    	<li><h3>$obj.titoloCorsaPartenza&nbsp;&#8680;&nbsp;${obj.titoloCorsaArrivo}&nbsp;$obj.numeroKilometro km</h3></li>
+    	<ul>
+    	#foreach( $objTariffaClasseAuto in $obj.tariffaClasseAuto )
+        	<li>
+    			$objTariffaClasseAuto.titoloClasseAuto&nbsp;$objTariffaClasseAuto.numeroPasseggeri&nbsp;
+    			$objTariffaClasseAuto.classeAutoveicoloDesc&nbsp;$objTariffaClasseAuto.prezzoClinte &euro;
+        	</li>
+    	#end
+    	</ul>
+	#end
+	</ul>
+	
+	<em>
+	#foreach($obj in $descrizioneCategorieAutoList)
+		&#42;$obj
+		#if($foreach.hasNext)<br>#end
+	#end
+	</em>
+	
+	<big>
+	<p>
+	A questo indirizzo puoi consultare il <strong>Tariffario Completo</strong> Italiano $linkPaginaTariffe
+	</p>
+		
+	<p>
+	Grazie, $webAppName
+	</p>
+	</big>
+
+	$INCLUDE_FOOTER_EMAIL
+	
+	<p><em>Per non riceve pi&ugrave; email fai click qui: $linkUnsubscribe</em></p>
+	
+</body>
+</html>

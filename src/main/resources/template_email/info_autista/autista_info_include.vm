@@ -1,0 +1,70 @@
+
+	<p><big>Con la presente la aggiorniamo sulle sue Tariffe, le nostre Vendite e le Ricerche effettuate dai Clienti.</big></p>
+
+	<hr>
+	
+	#if($tariffe_Zone_List)
+		<p>
+		<strong><big>Queste sono le Tariffe in base alla Zona di Lavoro, al Modello Auto e all'Anno di immatricolazione Auto.
+			Le Tariffe si intendono per Corse di Sola Andata (Ritorno Senza Passeggeri) e sono il compenso Effettivo dell'Autista.</big></strong>
+		<ul>
+		#foreach( $obj in $tariffe_Zone_List )
+			<li>Provincia di $obj.autistaZona.province.nomeProvincia</li>
+			<ul>
+			#foreach( $varObjAutoTariffa in $obj.tariffe_AutoveicoliTariffeList )
+				<li>$varObjAutoTariffa.autoveicolo.modelloAutoNumeroPosti.modelloAutoScout.marcaAutoScout.name $varObjAutoTariffa.autoveicolo.modelloAutoNumeroPosti.modelloAutoScout.name $varObjAutoTariffa.autoveicolo.annoImmatricolazione $varObjAutoTariffa.autoveicolo.classeAutoveicoloReale.description</li>
+				<ul>
+				#foreach( $varObjCompensoAutistaCorse in $varObjAutoTariffa.compensoAutistaCorse )
+					<li>Compenso $varObjCompensoAutistaCorse.compensoAutista &euro; - $varObjCompensoAutistaCorse.kilometri km - $varObjCompensoAutistaCorse.tariffaPerKm &euro;/km</li>
+				#end
+				</ul>
+			#end
+			</ul>
+		#end
+		</ul>		
+					
+		<p><big><u>$linkInsertTariffe</u></big></p>
+
+		</p>
+	#end
+
+	
+	<p>
+	<strong><big>Ultimi Transfer Venduti:</big></strong>
+	<ul>
+	#foreach( $obj in $ricercheTransfertVenduti )
+		<li>Giorno: $date.format("dd MMMM, HH:mm", $obj.dataRicerca) $obj.formattedAddress_Partenza &#8680; $obj.formattedAddress_Arrivo - Num.Passeg: $obj.numeroPasseggeri ($obj.distanzaText #if($obj.ritorno)Andata e Ritorno#{else}Solo Andata#end) 
+			Tariffa: $obj.richiestaMediaScelta.tariffaPerKm &euro;/km - Prezzo Cliente: $obj.richiestaMediaScelta.prezzoTotaleCliente&euro;. Compenso Autista: $obj.richiestaMediaScelta.prezzoTotaleAutista&euro;</li>
+	#end
+	</ul>
+	</p>
+
+	
+	#if($ricercheTransfertAutistaProvincia )
+	<p>
+	<strong><big>Ultimi Transfer Ricercati nella sua provincia:</big></strong>
+	<ul>
+	#foreach( $obj1 in $ricercheTransfertAutistaProvincia )
+		<li>Ricerca: $date.format("dd MMMM, HH:mm", $obj1.dataRicerca) $obj1.formattedAddress_Partenza &#8680; $obj1.formattedAddress_Arrivo - Num.Passeg: $obj1.numeroPasseggeri ($obj1.distanzaText #if($obj1.ritorno)Andata e Ritorno#{else}Solo Andata#end)
+		</li>
+	#end
+	</ul>
+	</p>
+	#end
+	
+	
+	#if($utimerRicercheTransfert )
+	<p>
+	<strong></big>Ultimi Transfer Ricercati:<big></strong>
+	<ul>
+	#foreach( $obj2 in $utimerRicercheTransfert )
+		<li>Ricerca: $date.format("dd MMMM, HH:mm", $obj2.dataRicerca) $obj2.formattedAddress_Partenza &#8680; $obj2.formattedAddress_Arrivo - Num.Passeg: $obj2.numeroPasseggeri ($obj2.distanzaText #if($obj2.ritorno)Andata e Ritorno#{else}Solo Andata#end) 
+		</li>
+	#end
+	</ul>
+	</p>
+	#end
+	
+	<br>
+	<p><big>Per qualsiasi domanda siamo a Sua disposizione telefonicamente, via Email e WhatsApp dalle ore 11:00 fino a sera.</big></p>
+	

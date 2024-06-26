@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite3.0.dtd">
+
+<urlrewrite default-match-type="wildcard">
+    <rule match-type="regex">
+        <from>^/admin/user/(.*)\$</from>
+        <to type="forward">/app/admin/userform?id=$1&amp;from=list</to>
+    </rule>
+    <!-- The following fixes a CSS bug in CXF. -->
+    <rule match-type="regex">
+        <from>^/services//(.*)$</from>
+        <to type="forward">/services/$1</to>
+    </rule>
+
+	<!-- non funziona in produzione 
+	<rule>
+		<name>SEO Redirect and Secure Channel</name>
+		<condition name="host" operator="equal">^apollotransfert.com</condition>
+		<from>^(.*)$</from>
+		<to type="redirect">https://www.apollotransfert.com$1</to>
+	</rule>
+	
+	<rule>
+        <name>Domain Name Check</name>
+        <condition name="host" operator="notequal">www.apollotransfert.com</condition>
+        <from>(.*)</from>
+		<to type="redirect">https://www.apollotransfert.com/context$1</to>
+    </rule>
+	-->
+    
+    <rule>
+        <from>/app/**</from>
+        <to last="true" type="redirect">%{context-path}/$1</to>
+    </rule>
+    <rule>
+        <from>/j_security_check</from>
+        <to>/j_security_check</to>
+    </rule>
+    <rule>
+        <from>/dwr/**</from>
+        <to>/dwr/$1</to>
+    </rule>
+    <rule>
+        <from>/services/**</from>
+        <to>/services/$1</to>
+    </rule>
+    <rule>
+        <from>/common/**</from>
+        <to>/common/$1</to>
+    </rule>
+    <rule>
+        <from>/assets/**</from>
+        <to>/assets/$1</to>
+    </rule>
+    <rule>
+        <from>/images/**</from>
+        <to>/images/$1</to>
+    </rule>
+    <rule>
+        <from>/scripts/**</from>
+        <to>/scripts/$1</to>
+    </rule>
+    <rule>
+        <from>/webjars/**</from>
+        <to>/webjars/$1</to>
+    </rule>
+    <rule>
+        <from>/favicon.ico</from>
+        <to>/favicon.ico</to>
+    </rule>
+    <rule>
+        <from>/sitemap.xml</from>
+        <to>/sitemap.xml</to>
+    </rule>
+    <rule>
+        <from>/humans.txt</from>
+        <to>/humans.txt</to>
+    </rule>
+    <rule>
+        <from>/robots.txt</from>
+        <to>/robots.txt</to>
+    </rule>
+	<rule>
+        <from>/logout*</from>
+        <to>/logout.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/login*</from>
+        <to>/login.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/login/</from>
+        <to>/login.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/collaboratori*</from>
+        <to>/collaboratori.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/collaboratori/</from>
+        <to>/collaboratori.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/chi-siamo*</from>
+        <to>/chi-siamo.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/chi-siamo/</from>
+        <to>/chi-siamo.jsp</to>
+    </rule>
+    <rule>
+        <from>/*/ncc-agenzie-viaggio*</from>
+        <to>/ncc-agenzie-viaggio.jsp</to>
+    </rule>
+    <rule>
+        <from>/faq*</from>
+        <to>/faq.jsp</to>
+    </rule>
+	<rule>
+        <from>/privacy-policy*</from>
+        <to>/privacy-policy.jsp</to>
+    </rule>
+    <rule>
+        <from>/cookie-policy*</from>
+        <to>/cookie-policy.jsp</to>
+    </rule>
+    <rule>
+        <from>/agenda-autista*</from> <!-- apertura agenda facilitato - non modificare -->
+        <to>/agenda-autista/index.html</to> 
+    </rule>
+    <rule>
+        <from>/agenda-autista*/</from> <!-- apertura agenda facilitato - non modificare -->
+        <to>/agenda-autista/index.html</to> 
+    </rule>
+    <rule>
+        <from>/agenda-autista/**</from> <!-- tutte le risorse all'interno della cartella agenda-autista vengono correttamente risposte (js, jpg, css, ecc) -->
+        <to>/agenda-autista/$1</to> 
+    </rule>
+    <rule> 
+        <from>/consigli-viaggio-grafica/**</from>
+        <to>/consigli-viaggio-grafica/$1</to>
+    </rule>
+    <rule>
+        <from>/js/**</from>
+        <to>/js/$1</to>
+    </rule>
+	<rule>
+        <from>/css/**</from>
+        <to>/css/$1</to>
+    </rule>
+	<rule>
+        <from>/fonts/**</from>
+        <to>/fonts/$1</to>
+    </rule>
+    <rule>
+        <from>/nuova_grafica/**</from>
+        <to>/nuova_grafica/$1</to>
+    </rule>
+    <!-- Spring MVC -->
+    <rule>
+        <from>/**</from>
+        <to>/app/$1</to>
+    </rule>
+    <outbound-rule>
+        <from>/app/**</from>
+        <to>/$1</to>
+    </outbound-rule>
+    <!-- Remove JSESSIONID from URLs when cookies disabled -->
+    <!-- http://stackoverflow.com/questions/962729/is-it-possible-to-disable-jsessionid-in-tomcat-servlet -->
+    <outbound-rule encodefirst="true" match-type="regex">
+        <name>Strip URL Session ID's</name>
+        <from>^(.*?)(?:\;jsessionid=[^\?#]*)?(\?[^#]*)?(#.*)?$</from>
+        <to>$1$2$3</to>
+    </outbound-rule>
+</urlrewrite>

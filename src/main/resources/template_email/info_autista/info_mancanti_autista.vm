@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Informazioni Profilo</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Autista $nomeCognome</h2>
+	<big>
+	<p>
+	In seguito a questo iniziale periodo di vendite che ci ha permesso di studiare il lavoro di Intermediazione tra Cliente e Autista, 
+	Abbiamo appurato alcuni aggiustamenti da eseguire che riguardano le Tariffe e la Grafica del Sito.
+	</p>
+	
+	<p>
+	La scelta delle Tariffe che attualmente &egrave; a totale discrezione dell'Autista - dopo gli sviluppi - sar&agrave; 
+	imposta alla Tariffa un valore minimo e massimo determinato dal modello dell'Auto, dall'Anno di immatricolazione e dalla Provincia di lavoro.<br> 
+	L'attuale Tariffa degli autisti che si trover&agrave; all'interno di tale scala non sar&agrave; modificata. Al contrario agli altri Autisti sar&agrave; azzerata la Tariffa e 
+	potranno decidere in seguito se riaggiustarla o meno.<br>
+	Tale modifica &egrave; dovuta sopratutto per eliminare discrepanze e per meritocrazia.<br>
+	Ad esempio alcune tariffe erano esageratamente alte. Per esempio a Milano una Citroen C5 del 2012 ha una tariffa di 2.30&euro;/km 
+	mentre una Mercedes-Benz C 220 del 2016 ha una tariffa di 1.60&euro;/km.
+	</p>
+	
+	<p>
+	Avvenute queste modifiche ApolloTransfert offrir&agrave; al Cliente un servizio pi&ugrave; ordinato e avr&agrave; l'opportunit&agrave; di scegliere una auto Economy o una Prima Classe.<br>
+	Sar&agrave; anche realizzata una nuova Grafica pi&ugrave; attraente e sar&agrave; anche implementanta la Tariffazione ad Ore.
+	</p>
+	
+	<p>
+	Contiamo di realizzare le segueni Modifiche nel pi&ugrave; breve tempo possibile per poi riprendere la Campagna Vendite.<br>
+	Grazie.
+	</p>
+	</big>
+	
+	#if ($listaDatiMancanti.size() > 0)
+		<p><strong><big>Per approvare il suo Profilo &egrave; necessario inserire le seguenti informazioni:</big></strong><br>
+		<ul>
+		#foreach( $obj in $listaDatiMancanti )
+	    	<li>$obj</li>
+	    	
+	    	#if($obj.contains('insert-documenti'))
+		    	<ul>
+		    	#foreach( $objDoc in $listaDocumenti )
+		        	<li>$objDoc</li>
+		    	#end
+		    	</ul>
+	    	#end
+		#end
+		</ul>
+	    	
+	    	
+	   *Pu&ograve; allegare i documenti rispondendo a questa email o anche via WhatsApp al <a href="tel:#msg("cellulare.matteo")">numero #msg("cellulare.matteo.esteso")</a>. 
+	   </p>
+	#end
+
+	
+	$INCLUDE_AUTISTA_INFO
+	
+	
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>
+
+
+#macro(msg $key)
+$messages.DammiMessageSource($key, $locale)
+#end
+
+#macro(msgArgs $key, $args)
+$messages.DammiMessageSource($key, $args.toArray(), $locale)
+#end

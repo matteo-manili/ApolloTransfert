@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Tariffe </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- NON AGGIUNGERE TAG PARTICOLARI, QUESTO HTML DEVE ESSERE CONVERTITO IN UN PDF E DEVE ESSERE HTML SEMPLICE -->
+</head>
+<body>
+	
+	<big>
+	<p>
+	<h3>$nomeCognome, Telefono $telefonoVenditore, Email $emailVenditore</h3>
+	</p>
+	</big>
+	
+	<p>
+	<h3>Le Corse sono Acquistabili alla pagina 
+	<a href="https://www.ncctransferonline.it">NccTransferOnline.it</a> inserendo il <u>Codice Venditore: $codiceVenditore</u></h3>
+	</p>
+	
+	<ul>
+	#foreach( $varObj in $menuTerrTariffeTransfer.transferTariffeProvince.tariffa_Province_e_Infrastrutture )
+    	<li><h3>Da $varObj.titoloCorsaPartenza a $varObj.titoloCorsaArrivo $varObj.numeroKilometro km</h3></li>
+    	<ul>
+    	#foreach( $objTariffaClasseAuto in $varObj.tariffaClasseAuto )
+        	<li>
+    			$objTariffaClasseAuto.titoloClasseAuto $objTariffaClasseAuto.numeroPasseggeri $objTariffaClasseAuto.classeAutoveicoloDesc $objTariffaClasseAuto.prezzoClinte &euro;
+        	</li>
+    	#end
+    	</ul>
+	#end
+	</ul>
+	
+	#foreach($obj in $descrizioneCategorieAutoList)
+	* $obj
+		#if($foreach.hasNext)
+		<br/>
+		#end
+	#end
+
+		
+</body>
+</html>

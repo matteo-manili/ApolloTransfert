@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Informazioni Profilo</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Autista $nomeCognome</h2>
+	
+	<p><big>I Documenti sono stati approvati,<br>
+		Le invio in allegato il Contratto da firmare e caricare nella pagina documenti, oppure allegarlo in risposta a questa email.<br>
+		Il contratto deve essere stampato e firmato con firma "manuale" (non digiale) e scansionato/fotografato, altrimenti non ha valore legale.
+	<ul>
+    	<li>$linkInsertDocumenti</li>
+	</ul>
+	</big></p>
+	
+	$INCLUDE_AUTISTA_INFO
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

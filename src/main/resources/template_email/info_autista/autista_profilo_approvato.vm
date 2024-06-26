@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Informazioni Profilo</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Autista $autista.user.fullName</h2>
+	
+	<p><big>La informo che il suo Profilo &egrave; stato Approvato e che le passeremo le Corse che venderemo sulla sua Provincia.</big></p>
+	
+	<p><big>
+		Le ricordo che le Corse le saranno passate via EMAIL a $autista.user.email e via SMS al numero $autista.user.phoneNumber per accettarle dovr&agrave; cliccare sul link 
+		all'interno dell'SMS il quale aprir&agrave; una pagina web dove trover&agrave; i dettagli della corsa ed il pulsante CONFERMA CORSA.<br>
+	</big></p>
+	
+	$INCLUDE_AUTISTA_INFO
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

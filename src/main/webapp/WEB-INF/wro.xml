@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro">
+<!-- CSS URL Rewriting fails when using webjar resource locator: https://github.com/alexo/wro4j/issues/127 -->
+<group name="main">
+	<!-- CSS -->
+	<css>/nuova_grafica/css/bootstrap.min.css</css>
+	<css>/nuova_grafica/style.css</css>
+	<css>/nuova_grafica/custom.css</css>
+	<!-- al posto degli "&" vanno messi gli ";" -->
+	<css>https://use.fontawesome.com/releases/v5.0.9/css/all.css?integrity=sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1;crossorigin=anonymous</css>
+	<css>/nuova_grafica/css/font-awesome.min.css</css>
+	<css>/nuova_grafica/css/wickedpicker.css</css>
+	<css>/nuova_grafica/flags/flags.css</css>
+	<!-- SEMBRA CHE NON VENGONO USATI 
+	<css>https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i</css>
+	<css>/nuova_grafica/css/dataTables.bootstrap.min.css</css>
+	<css>/nuova_grafica/css/jquery-ui.css</css>
+	<css>/css/style.css</css> -->
+	<!-- JS -->
+	<js>/scripts/vendor/1000hz-bootstrap-validator/validator.min.js</js>
+	<js>classpath:META-INF/resources/webjars/jquery-cookie/1.3.1/jquery.cookie.js</js>
+</group>
+</groups>

@@ -1,0 +1,20 @@
+<decorators defaultdir="/decorators">
+    <excludes>
+    	<!-- da qui possono girare anche le jsp ma non passeranno per il decorator -->
+        <pattern>/40*.jsp</pattern>
+        <pattern>/*ajax=true*</pattern>
+        <pattern>/struts/*</pattern>
+        <pattern>/resources/*</pattern>
+        <pattern>/agenda-autista*</pattern> 
+        <pattern>/privacy-policy*</pattern>
+        <pattern>/cookie-policy*</pattern>
+    </excludes>
+    
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="defaultConsigliDiViaggio" page="defaultConsigliDiViaggio.jsp">
+        <pattern>/consigli-di-viaggio*</pattern>
+    </decorator>
+    
+</decorators>

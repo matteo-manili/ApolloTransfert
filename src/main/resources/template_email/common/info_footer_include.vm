@@ -1,0 +1,14 @@
+<p style="margin-top: 50px;">
+#msg("intestatario.ditta")<br>
+Responsabile | $webAppName<br>
+<a href="tel:#msg("cellulare.matteo")">T. #msg("cellulare.matteo.esteso")</a><br>
+$linkDomain
+</p>
+
+#macro(msg $key)
+$messages.DammiMessageSource($key, $locale)
+#end
+
+#macro(msgArgs $key, $args)
+$messages.DammiMessageSource($key, $args.toArray(), $locale)
+#end

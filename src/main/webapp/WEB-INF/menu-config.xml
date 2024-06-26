@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+    	<!-- MENU USER -->
+        <Menu name="Home" title="home.title" page="/home-user" roles="ROLE_ADMIN,ROLE_USER"/>
+        <Menu name="UserMenu" title="menu.user" description="User Menu" page="/userform" roles="ROLE_ADMIN,ROLE_USER"/>
+        <Menu name="Logout" title="user.logout" page="/logout" roles="ROLE_ADMIN,ROLE_USER"/>
+        <!-- MENU SENZA ROLE -->
+        <Menu name="HomeRicercaTransfer" title="home.ricerca" page="/"/>
+        <Menu name="Login" title="menu.login" page="/login"/>
+        <Menu name="Registrazione" title="menu.registrati" page="/signup"/>
+        <Menu name="ChiSiamo" title="menu.chi.siamo" page="/chi-siamo"/>
+        <Menu name="Faq" title="menu.faq" page="/faq"/>
+        <Menu name="Contatti" title="menu.contatti" page="/contatti"/>
+        <Menu name="Tariffe" title="menu.tariffe" page="/tariffe-transfer"/>
+        <Menu name="NccAgenzieViaggio" title="menu.ncc.agenzie.viaggio" page="/ncc-agenzie-viaggio"/>
+        <Menu name="NccAziende" title="menu.ncc.aziende" page="/ncc-aziende"/>
+        <Menu name="ConsigliDiViaggio" title="menu.consigli.di.viaggio" page="/consigli-di-viaggio"/>
+        <Menu name="LavoraConNoi" title="menu.lavora.con.noi" page="/collaboratori">
+	        <Item name="LavoraConNoi_Autista" title="menu.lavora.con.noi.autista" page="/collaboratori"/>
+	        <Item name="LavoraConNoi_AgenziaViaggio" title="menu.ncc.agenzie.viaggio" page="/ncc-agenzie-viaggio"/>
+        </Menu>
+        <Menu name="Languages" title="menu.language" description="languages" page="/index">
+            <Item id="1" name="italian" title="menu.italiano" page="/?locale=it"/>
+            <Item id="2" name="english" title="menu.english" page="/?locale=en"/>
+            <Item id="3" name="espanyol" title="menu.espanyol" page="/?locale=es"/>
+        </Menu>
+        <!-- MENU ADMIN -->
+        <Menu name="AdminMenu" title="menu.admin" description="Admin Menu" roles="ROLE_ADMIN">
+        	<Item name="GestAutistiUsers" title="menu.gest.autisti" page="/admin/gestioneAutista"/>
+        	<Item name="GestCorse" title="menu.gest.corse" page="/admin/admin-gestioneCorse"/>
+            <Item name="RicercheTransfert" title="menu.ricerche.transfert" page="/admin/admin-tableRicercheTransfert"/>
+            <Item name="1@divider" title="" page=""/>
+            <Item name="ViewUsers" title="menu.admin.users" page="/admin/users"/>
+            <Item name="ActiveUsers" title="home.activeUsers" page="/admin/activeUsers"/>
+            <Item name="Visitatori" title="menu.visitatori" page="/admin/admin-tableVisitatori"/>
+            <Item name="ChatZendesk" title="menu.chat.zendesk" page="/admin/admin-chatZendesk"/>
+            <Item name="2@divider" title="" page=""/>
+            <Item name="TableContattiMarketing" title="menu.tabelle.contatti.marketing" page="/contatti-marketing"/>
+            <Item name="TableAeroporti" title="menu.tabelle.aeroporti" page="/admin/admin-tableAeroporti"/>
+            <Item name="TablePortiNavali" title="menu.tabelle.portiNavali" page="/admin/admin-tablePortiNavali"/>
+            <Item name="TableMusei" title="menu.tabelle.musei" page="/admin/admin-tableMusei"/>
+            <Item name="TableComuni" title="menu.tabelle.comuni" page="/admin/admin-tableComuni"/>
+            <Item name="TableProvince" title="menu.tabelle.province" page="/admin/admin-tableProvince"/>
+            <Item name="TableModelloAutoveicolo" title="menu.tabelle.modello.autoveicolo" page="/admin/admin-tableModelloAutoveicolo"/>
+            <Item name="3@divider" title="" page=""/>
+            <Item name="TableGestioneApplicazione" title="menu.tabelle.gestioneApplicazione" page="/admin/admin-tableGestioneApplicazione"/>
+            <Item name="4@divider" title="" page=""/>
+            <Item name="Prove" title="menu.prove" page="/prove"/>
+        </Menu>
+        
+        
+        
+    </Menus>
+</MenuConfig>

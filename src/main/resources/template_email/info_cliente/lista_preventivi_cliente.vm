@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Richiesta Preventivi Corsa $corsaId</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+
+	<h2>Gentile $nomeCognomeCliente,</h2>
+	
+	<p><big>Hai Richiesto i preventivi dai nostri Autisti.
+	<br>Mano a mano che i nostri Autisti visualizzeranno le richieste riceverai in Tempo Reale via SMS e via Email i loro Preventivi.
+	<br>I Prezzi saranno già compresi di tutto e il pagamento dovrà essere eseguito online.</big></p>
+	
+	<p>$corsaPartenzaArrivo </p>
+	
+	<p>$notePerAutista </p>
+	
+	<p><big>Per Visualizzare Tutti i Preventivi ricevuti vai alla pagina $linkPaginaListaPreventiviCliente, dalla medesima pagina puoi decidere di non ricevere più preventivi spuntando la apposita casella.</big></p>
+	
+	<p><big>Oppure Ricercare altri Transfer alla pagina $linkPaginaRicerca</big></p>
+	
+	<p><big>Questi sono gli Autisti dai quali riceverai i Preventivi</big></p>
+	
+	<p>$listaAutistiPreventivo </p>
+	
+	
+	$INCLUDE_FOOTER_EMAIL
+
+</body>
+</html>

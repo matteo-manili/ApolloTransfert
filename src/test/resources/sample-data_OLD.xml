@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phone_number</column>
+        <column>postal_code</column>
+        <column>province</column>
+        <column>website</column>
+        <column>password_hint</column>
+        <column>version</column>
+        <column>account_enabled</column>
+        <column>account_expired</column>
+        <column>account_locked</column>
+        <column>credentials_expired</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="username">user</value>
+            <value description="password">$2a$10$CnQVJ9bsWBjMpeSKrrdDEeuIptZxXrwtI6CZ/OgtNxhIgpKxXeT9y</value>
+            <value description="first_name">Calogero</value>
+            <value description="last_name">Mortacci Tua</value>
+            <value description="address"></value>
+            <value description="city">roma</value>
+            <value description="country">IT</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phone_number">+393289126111</value>
+            <value description="postal_code">00166</value>
+            <value description="province">RM</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="password_hint"><![CDATA[A male kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+            <value description="autista">1</value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="username">admin</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Matt</value>
+            <value description="last_name">Raible</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phone_number">+393289126222</value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+            <value description="autista">1</value>
+        </row>
+        <row>
+            <value description="id">-3</value>
+            <value description="username">two_roles_user</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Pasquale</value>
+            <value description="last_name">diocane</value>
+            <value description="address"></value>
+            <value description="city">roma</value>
+            <value description="country">IT</value>
+            <value description="email">two_roles_user@appfuse.org</value>
+            <value description="phone_number">+393289126333</value>
+            <value description="postal_code">00179</value>
+            <value description="province">RM</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+            <value description="autista">1</value>
+        </row>
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[AMMINISTRATORE]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[USER]]></value>
+        </row>
+        <row>
+            <value description="id">-3</value>
+            <value description="name">ROLE_GEST_AUTISTA</value>
+            <value description="description"><![CDATA[GESTIONE AUTISTI]]></value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">-1</value> <!-- utente USER -->
+            <value description="role_id">-2</value> <!-- ROLE_USER -->
+        </row>
+        <row>
+            <value description="user_id">-1</value> <!-- utente USER -->
+            <value description="role_id">-3</value> <!-- ROLE_GEST_AUTISTA -->
+        </row>
+        <row>
+            <value description="user_id">-2</value> <!-- utente ADMIN -->
+            <value description="role_id">-1</value> <!-- ROLE_ADMIN -->
+        </row>
+        <row>
+            <value description="user_id">-3</value> <!-- utente two_roles_user -->
+            <value description="role_id">-1</value> <!-- ROLE_ADMIN -->
+        </row>
+        <row>
+            <value description="user_id">-3</value> <!-- utente two_roles_user -->
+            <value description="role_id">-2</value> <!-- ROLE_USER -->
+        </row>
+    </table>
+    
+	<table name="tipo_ruoli">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">CLIENTE_ROLE</value>
+            <value description="description"><![CDATA[CLIENTE]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">AUTISTA_ROLE</value>
+            <value description="description"><![CDATA[AUTISTA]]></value>
+        </row>
+    </table>
+    
+    <table name="user_tipo_ruoli">
+        <column>user_id</column>
+        <column>tipo_ruoli_id</column>
+		<row>
+			<value description="user_id">-1</value> <!-- utente USER -->
+			<value description="tipo_ruoli_id">-2</value> <!-- AUTISTA -->
+		</row>
+		<row>
+			<value description="user_id">-2</value> <!-- utente ADMIN -->
+			<value description="tipo_ruoli_id">-2</value> <!-- AUTISTA -->
+		</row>
+		<row>
+			<value description="user_id">-3</value> <!-- utente two_roles_user -->
+			<value description="tipo_ruoli_id">-2</value> <!-- AUTISTA -->
+		</row>
+    </table>
+    
+    
+    
+    <table name="autista">
+        <column>id_autista</column>
+        <column>numCorseEseguite</column>
+        <column>percentualeServizio</column>
+        <column>bannato</column>
+		<column>numeroPatende</column>
+		<column>immaginePatente</column>
+		<column>numeroCartaIdentita</column>
+		<column>immagineCartaIdentita</column>
+        <column>id_user</column>
+        <row>
+            <value description="id_autista">1</value>
+            <value description="numCorseEseguite">1</value>
+            <value description="percentualeServizio">20</value>
+            <value description="bannato">0</value>
+            <value description="numeroPatende">CALOGERO123</value>
+            <value description="immaginePatente"></value>
+            <value description="numeroCartaIdentita">CAL456</value>
+            <value description="immagineCartaIdentita"></value>
+            <value description="id_user">-1</value>
+        </row>
+        <row>
+            <value description="id_autista">2</value>
+            <value description="numCorseEseguite">1</value>
+            <value description="percentualeServizio">20</value>
+            <value description="bannato">0</value>
+            <value description="numeroPatende">PASQUALE456</value>
+            <value description="immaginePatente"></value>
+            <value description="numeroCartaIdentita">PAS456</value>
+            <value description="immagineCartaIdentita"></value>
+            <value description="id_user">-3</value>
+        </row>
+        <row>
+            <value description="id_autista">3</value>
+            <value description="numCorseEseguite">1</value>
+            <value description="percentualeServizio">20</value>
+            <value description="bannato">0</value>
+            <value description="numeroPatende">MATTEO</value>
+            <value description="immaginePatente"></value>
+            <value description="numeroCartaIdentita">ADM789</value>
+            <value description="immagineCartaIdentita"></value>
+            <value description="id_user">-2</value>
+        </row>
+    </table>
+    
+    <table name="data_numero_posti_auto">
+        <column>id_numero_posti_auto</column>
+        <column>nome</column>
+        <column>description</column>
+        <row>
+            <value description="id_numero_posti_auto">1</value>
+            <value description="nome">numero.posti.auto.1</value>
+            <value description="description"><![CDATA[description default 1-3 posti]]></value>
+        </row>
+        <row>
+            <value description="id_numero_posti_auto">2</value>
+            <value description="nome">numero.posti.auto.2</value>
+            <value description="description"><![CDATA[description default 1-5 posti]]></value>
+        </row>
+        <row>
+            <value description="id_numero_posti_auto">3</value>
+            <value description="nome">numero.posti.auto.3</value>
+            <value description="description"><![CDATA[description default 1-8 posti]]></value>
+            
+        </row>
+    </table>
+
+    
+    
+	
+
+
+</dataset>

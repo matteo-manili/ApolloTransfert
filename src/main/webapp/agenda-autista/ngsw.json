@@ -1,0 +1,106 @@
+{
+  "configVersion": 1,
+  "timestamp": 1591352891739,
+  "index": "/agenda-autista/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/agenda-autista/index.html",
+        "/agenda-autista/main-es2015.3a8fd5aee89453547ac8.js",
+        "/agenda-autista/main-es5.3a8fd5aee89453547ac8.js",
+        "/agenda-autista/manifest.webmanifest",
+        "/agenda-autista/polyfills-es2015.0ef207fb7b4761464817.js",
+        "/agenda-autista/polyfills-es5.931f63c2feef40f602a6.js",
+        "/agenda-autista/runtime-es2015.654659699f2508c8ae78.js",
+        "/agenda-autista/runtime-es5.654659699f2508c8ae78.js",
+        "/agenda-autista/scripts.859e64cef1ef944f8beb.js",
+        "/agenda-autista/styles.f72939f417e9a3df0d1b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/agenda-autista/assets/icons/icon-128x128.png",
+        "/agenda-autista/assets/icons/icon-144x144.png",
+        "/agenda-autista/assets/icons/icon-152x152.png",
+        "/agenda-autista/assets/icons/icon-192x192.png",
+        "/agenda-autista/assets/icons/icon-384x384.png",
+        "/agenda-autista/assets/icons/icon-512x512.png",
+        "/agenda-autista/assets/icons/icon-72x72.png",
+        "/agenda-autista/assets/icons/icon-96x96.png",
+        "/agenda-autista/assets/offline.png",
+        "/agenda-autista/favicon.png",
+        "/agenda-autista/fontawesome-webfont.674f50d287a8c48dc19b.eot",
+        "/agenda-autista/fontawesome-webfont.912ec66d7572ff821749.svg",
+        "/agenda-autista/fontawesome-webfont.af7ae505a9eed503f8b8.woff2",
+        "/agenda-autista/fontawesome-webfont.b06871f281fee6b241d6.ttf",
+        "/agenda-autista/fontawesome-webfont.fee66e712a8a08eef580.woff"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "agendautente-cache",
+      "patterns": [
+        "https:\\/\\/apollotransfert\\.com\\/api_Authentication_VerificaJwtInfoJwt"
+      ],
+      "strategy": "performance",
+      "maxSize": 10,
+      "maxAge": 86400000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/agenda-autista/assets/icons/icon-128x128.png": "1d732d859c18e63fc033caf708dd4d927c83b7fd",
+    "/agenda-autista/assets/icons/icon-144x144.png": "53966db60ee97b4b4c20b9f48942fb3948533695",
+    "/agenda-autista/assets/icons/icon-152x152.png": "b8d9022f7c7d61896e819691fca6a05f502b7210",
+    "/agenda-autista/assets/icons/icon-192x192.png": "c5cedbd58ef60ba668beb22e5e1b1674463084c5",
+    "/agenda-autista/assets/icons/icon-384x384.png": "bf4504fa82f233613df85a845fdb7d685e129ffb",
+    "/agenda-autista/assets/icons/icon-512x512.png": "155ecb9d2285f8b5675e9f5295794749cf82f33f",
+    "/agenda-autista/assets/icons/icon-72x72.png": "80717821fb267b24d85f38e15c344f27e5a22ef1",
+    "/agenda-autista/assets/icons/icon-96x96.png": "531dbda27e6be9029d72b856e342f21ddf3a6320",
+    "/agenda-autista/assets/offline.png": "5ad63ad3ede22d29d9981e88beadae486081bd59",
+    "/agenda-autista/favicon.png": "fd3090729228741eb5ca32012c2004422394386a",
+    "/agenda-autista/fontawesome-webfont.674f50d287a8c48dc19b.eot": "d980c2ce873dc43af460d4d572d441304499f400",
+    "/agenda-autista/fontawesome-webfont.912ec66d7572ff821749.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
+    "/agenda-autista/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
+    "/agenda-autista/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
+    "/agenda-autista/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
+    "/agenda-autista/index.html": "fc4ba786f92db567e7ffaab25656be90a0a538e8",
+    "/agenda-autista/main-es2015.3a8fd5aee89453547ac8.js": "0a6efc1f2c2b501194292b46451613a1c33b179f",
+    "/agenda-autista/main-es5.3a8fd5aee89453547ac8.js": "bfeef182c075698bc61802077df820217e8bf73f",
+    "/agenda-autista/manifest.webmanifest": "20f326e5306b6f06e2470b1836200da7200de269",
+    "/agenda-autista/polyfills-es2015.0ef207fb7b4761464817.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
+    "/agenda-autista/polyfills-es5.931f63c2feef40f602a6.js": "45c51483238468881240579c3fdecd19144cff17",
+    "/agenda-autista/runtime-es2015.654659699f2508c8ae78.js": "244946c317927bfda52fe190ae5d270fbe23281c",
+    "/agenda-autista/runtime-es5.654659699f2508c8ae78.js": "244946c317927bfda52fe190ae5d270fbe23281c",
+    "/agenda-autista/scripts.859e64cef1ef944f8beb.js": "3d5b70b9f5374f27208d503eb5441481d79c9b6d",
+    "/agenda-autista/styles.f72939f417e9a3df0d1b.css": "e3891564ac3329079c830cb81e31e13af85b419e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

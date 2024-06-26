@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Corsa Acquistata $corsaId</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile $nomeCognome</h2>
+	
+	<p><big>Le confermiamo l'acquisto della Corsa numero: $corsaId </big></p>
+	
+	<p>$infoCorsa </p>
+	
+	<p>$corsaPartenzaArrivo </p>
+	
+	<p>$notePerAutista </p>
+	
+	<p>$linkVisualizzaCorsaCliente </p>
+	
+	<p><em>$numOreInfoAutistaCliente </em></p>
+	
+	<p>Le forniamo la fattura in Allegato.</p>
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

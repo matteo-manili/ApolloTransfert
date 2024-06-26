@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Corsa Venduta</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Venditore $nomeCognomeVenditore</h2>
+	
+	<p><big>Congratulazioni! Hai Venduto la Corsa numero: $corsaId al Cliente: $nomeCognome</big></p>
+	
+	<p>Vai alla pagina $linkGestioneCorseVenditore per gestire le corse che hai Venduto<br>
+		<ul>
+		  <li>Visualizzare gli Introiti della Corsa</li>
+		  <li>Visualizzare le Info Autista</li>
+		  <li>Inserire/Modificare il Contatto di un Passeggero</li>
+		  <li>Cancellare ed eseguire il Rimborso</li>
+		  <li>Scaricare la Fattura</li>
+		 </ul>
+		 Il pagamento della commissione avverrà successivamente l'esecuzioe della Corsa.<br>
+		 A titolo Informativo ti riportiamo il Contenuto della Email e la Fattura allegata che abbiamo inviato al Cliente nel momento dell'Acquisto.
+	</p>
+		
+	<hr>
+	
+	<p>$infoCorsa </p>
+	
+	<p>$corsaPartenzaArrivo </p>
+	
+	<p>$notePerAutista </p>
+	
+	<p>$linkVisualizzaCorsaCliente </p>
+	
+	<p><em>$numOreInfoAutistaCliente </em></p>
+	
+	<p>Le forniamo la fattura in Allegato.</p>
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="ApplicationEntityManager" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>com.apollon.model.User</class>
+        <class>com.apollon.model.Role</class>
+        <class>com.apollon.model.TipoRuoli</class>
+        <class>com.apollon.model.Autista</class>
+        <class>com.apollon.model.Autoveicolo</class>
+        <class>com.apollon.model.NumeroPostiAuto</class>
+        <class>com.apollon.model.Regioni</class>
+        <class>com.apollon.model.Province</class>
+        <class>com.apollon.model.Comuni</class>
+        <class>com.apollon.model.ComuniFrazioni</class>
+        <class>com.apollon.model.Aeroporti</class>
+        <class>com.apollon.model.PortiNavali</class>
+        <class>com.apollon.model.Musei</class>
+        <class>com.apollon.model.AutistaAeroporti</class>
+        <class>com.apollon.model.AutistaPortiNavali</class>
+        <class>com.apollon.model.AutistaMusei</class>
+        <class>com.apollon.model.AutistaZone</class>
+        <class>com.apollon.model.ZoneGiornataCompleta</class>
+        <class>com.apollon.model.ZoneLungaPercorrenza</class>
+        <class>com.apollon.model.ZoneMatrimoni</class>
+        <class>com.apollon.model.Tariffe</class>
+        <class>com.apollon.model.TariffeValori</class>
+        <class>com.apollon.model.Disponibilita</class>
+        <class>com.apollon.model.DisponibilitaDate</class>
+        <class>com.apollon.model.RicercaTransfert</class>
+        <class>com.apollon.model.RichiestaAutistaParticolare</class>
+        <class>com.apollon.model.RichiestaMedia</class>
+        <class>com.apollon.model.RichiestaMediaAutista</class>
+        <class>com.apollon.model.RichiestaMediaAutistaAutoveicolo</class>
+        <class>com.apollon.model.GestioneApplicazione</class>
+        <class>com.apollon.model.Visitatori</class>
+        <class>com.apollon.model.BackupInfoUtente</class>
+        <class>com.apollon.model.Fatture</class>
+        <class>com.apollon.model.AutistaLicenzeNcc</class>
+        <class>com.apollon.model.AutistaSottoAutisti</class>
+        <class>com.apollon.model.DocumentiCap</class>
+        <class>com.apollon.model.DocumentiPatente</class>
+        <class>com.apollon.model.DocumentiIscrizioneRuolo</class>
+        <class>com.apollon.model.DocumentiCartaIdentita</class>
+        <class>com.apollon.model.Ritardi</class>
+        <class>com.apollon.model.MarcaAutoScout</class>
+        <class>com.apollon.model.ModelloAutoScout</class>
+        <class>com.apollon.model.ClasseAutoveicolo</class>
+        <class>com.apollon.model.MacroRegioni</class>
+        <class>com.apollon.model.ModelloAutoNumeroPosti</class>
+        <class>com.apollon.model.AgenzieViaggioBit</class>
+        <class>com.apollon.model.DistanzeProvinceInfrastrutture</class>
+        <class>com.apollon.model.VenditorePercServProvincia</class>
+        <class>com.apollon.model.ListaInvioEmailSms</class>
+        <class>com.apollon.model.Supplementi</class>
+        <class>com.apollon.model.Nazioni</class>
+        <class>com.apollon.model.AgA_AutoveicoloModelliTariffari</class>
+        <class>com.apollon.model.AgA_ModelliTariffari</class>
+        <class>com.apollon.model.AgA_AutoveicoloModelliGiornate</class>
+        <class>com.apollon.model.AgA_ModelliGiornate</class>
+        <class>com.apollon.model.AgA_Giornate</class>
+        <class>com.apollon.model.AgA_Tariffari</class>
+        <class>com.apollon.model.Comunicazioni</class>
+        <class>com.apollon.model.ComunicazioniUser</class>
+        <class>com.apollon.model.CoordGeoProvince</class>
+    </persistence-unit>
+
+    <!-- WARNING: This file's file original source is at web/common/src/main/resources/META-INF. The
+        META-INF directory is included in the jsf, spring, struts and tapestry projects using svn:externals.
+        If you need to modify this file, please do so in web/common/src/main/resources/META-INF, check it
+        in, and then "svn up" for the other modules. -->
+</persistence>

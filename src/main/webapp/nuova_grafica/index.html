@@ -1,0 +1,727 @@
+<?php include 'header.php';?>
+	
+	<div class="content-area home-content">
+	
+		<div class="container">
+		
+			<div class="main-heading-row">
+					<h1 class="text-center">Car Rental With Driver</h1>
+					<h3 class="text-center">All Inclusive Price, Transfer Service Throughout Italy.</h3>
+			</div>
+
+		
+			<div class="col-md-12">
+				
+				<div class="row info-row info-airport">
+					<h2><img src="images/airplane.png">Transfer Aeroporto di Milano-Malpensa (MXP)</h2>
+					<h3><img src="images/earth.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+					<h3><img src="images/plane.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+				</div>
+				
+				<div class="row info-row info-attraction">
+					<h2><img src="images/bank.png">Transfer Aeroporto di Milano-Malpensa (MXP)</h2>
+					<h3><img src="images/earth.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+					<h3><img src="images/plane.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+				</div>
+				
+				<div class="row info-row info-city">
+					<h2><img src="images/earth-globe.png">Transfer Aeroporto di Milano-Malpensa (MXP)</h2>
+					<h3><img src="images/earth.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+					<h3><img src="images/plane.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+				</div>
+				
+				<div class="row info-row info-port">
+					<h2><img src="images/cruise.png">Transfer Aeroporto di Milano-Malpensa (MXP)</h2>
+					<h3><img src="images/earth.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+					<h3><img src="images/plane.png">Tariffe Transfer da Aeroporto di Milano-Malpensa (MXP) alle le Citta nelle vicinanze</h3>
+					<ul>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+						<li><a href="#">Partenza da Aeroporto di Milano-Malpensa (MXP) arrivo a Varese da 72.12€</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="row steps-row">
+					<ul>
+						<li data-back="form-step-1" class="step-1 steps first step-active"><span><img src="images/step-search.png">Search Transfers</span></li>
+						<li data-back="form-step-2" class="step-2 steps second"><span><img src="images/step-available.png">Available Cars</span></li>
+						<li data-back="form-step-3" class="step-3 steps third"><span><img src="images/step-payment.png">Payment</span></li>
+						<li data-back="form-step-4" class="step-4 steps last"><span><img src="images/step-summary.png">Summary</span></li>
+					</ul>
+				</div>
+				
+				<div class="row form-row">
+					<form data-toggle="validator" role="form">
+					
+						<div class="form-step-1 form-steps">
+
+						  <div class="form-group input-group">
+								<span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+							  <input class="form-control add-input" data-error="Please enter Departure." onFocus="geolocate()" id="inputDeparture" placeholder="Departure" type="text" required />
+							  <div class="help-block with-errors"></div>
+						  </div>
+						  
+						  <div class="form-group input-group">
+								<span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+							  <input class="form-control add-input" data-error="Please enter Arrival." id="inputArrival" placeholder="Arrival"  type="text" required />
+							  <div class="help-block with-errors"></div>
+						  </div>
+						  
+						  <div class="form-group input-group invert-form-group">
+							  <!--<Button class="form-control" id="invert-da" >Invert Departure Arrival</button> -->
+							  <input type="button" class="form-control" id="invert-da"  value="Invert Departure Arrival" onclick="invert()">
+						  </div>
+
+						  <div class="form-group input-group date-control">
+								<span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+							  <input class="form-control datepicker-departure datepicker" data-error="Please enter Date." id="datepicker-departure" placeholder="Date"  type="text" required readonly="true" />
+							  <div class="help-block with-errors"></div>
+						  </div>
+						  
+						  <div class="form-group input-group time-control">
+								<span class="input-group-addon"><i class="far fa-clock"></i></span>
+								<input class="form-control timepicker" data-error="Please enter Time." id="timepicker-departure" placeholder="10:00 AM"  type="text" required readonly="true" />
+								<span class="radio-holder">
+									<label class="custom-check">  <span class="ret-txt">Return</span>
+									  <input type="checkbox" id="ret-check" name="ret-check">
+									  <span class="checkmark"></span>
+									</label>
+								</span>
+							  <div class="help-block with-errors"></div>
+						  </div>
+						  
+						  <div class="return-date-time">
+							  <div class="form-group input-group date-control">
+									<span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+								  <input class="form-control datepicker-arrival datepicker" data-error="Please enter Date." id="datepicker-arrival" placeholder="Date"  type="text" required readonly="true" />
+								  <div class="help-block with-errors"></div>
+							  </div>
+							  
+							  <div class="form-group input-group time-control">
+									<span class="input-group-addon"><i class="far fa-clock"></i></span>
+									<input class="form-control timepicker" data-error="Please enter Time." id="timepicker-arrival" placeholder="10:00 AM"  type="text" readonly="true" />
+								  <div class="help-block with-errors"></div>
+							  </div>
+						  </div>
+						  
+						  <div class="form-group input-group">
+								<span class="input-group-addon"><i class="fas fa-user"></i></span>
+							  <input class="form-control" data-error="Please enter Person Details." id="inputPerson" placeholder="Person"  type="number" required />
+							  <div class="help-block with-errors"></div>
+						  </div>
+						  
+						  <div class="form-group input-group form-ImpInfo">
+								<span class="input-group-addon"><i class="far fa-file-alt"></i></span>
+							  <textarea  class="form-control" placeholder="Important Information" rows="6" data-error="Please enter Person Details." id="inputImpInfo"></textarea>
+							  <div class="help-block with-errors"></div>
+						  </div>
+
+						  <div class="form-group">
+							  <button class="btn btn-primary" id="submit-step-1">
+								  PROCEED
+							  </button>
+						  </div>
+						  
+						</div>
+						
+						<!-- ---------------------- -->
+						<!-- INIZIO DATI RICERCA -->
+						<!-- ---------------------- -->
+						
+						<div class="form-step-2 form-steps">
+							<div class="div-dep-2">
+								<div class="row head-dep-2-row">
+									
+									<div class="col-md-6">
+										<h3 class="text-right"><span class="prnt-dep">piazza del popolo, 04100, LATINA</span></h3>
+									</div>
+									
+									<div class="col-md-6">
+										<h3 class="text-left"><span class="prnt-arr">VIA ALDO MORO, 03100, FROSIONE</span></h3>
+									</div>
+									
+								</div>
+								
+								<div class="row dep-arr-info dep-2-row text-center">
+									
+									<div class="col-md-4">
+										<h5><img src="images/info-calendar.png"><b>Date:</b><span class="prnt-date">22 March</span></h5></div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-clock.png"><b>Time:</b><span class="prnt-time">11:00</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-group.png"><b>No. Of Passenger:</b><span class="prnt-pgr">3</span></h5>
+									</div>
+								</div>
+								<div class="row dep-arr-info dep-2-row text-center">
+									<div class="col-md-4">	
+										<h5><img src="images/info-distance.png"><b>Distance:</b><span class="prnt-dis">54.3 KM</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Duration:</b><span class="prnt-dur">30 Min</span></h5>
+									</div>
+									<div class="col-md-4">	
+										
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="div-dep-2 div-dep-2-arr">
+								<div class="row head-dep-2-row">
+									
+									<div class="col-md-6">
+										<h3 class="text-right"><span class="prnt-arr">piazza del popolo, 04100, LATINA</span></h3>
+									</div>
+									
+									<div class="col-md-6">
+										<h3 class="text-left"><span class="prnt-dep">VIA ALDO MORO, 03100, FROSIONE</span></h3>
+									</div>
+									
+								</div>
+								
+								<div class="row dep-arr-info dep-2-row text-center">
+									
+									<div class="col-md-4">
+										<h5><img src="images/info-calendar.png"><b>Date:</b><span class="prnt-date-arr">22 March</span></h5></div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-clock.png"><b>Time:</b><span class="prnt-time-arr">11:00</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-group.png"><b>No. Of Passenger:</b><span class="prnt-pgr">3</span></h5>
+									</div>
+								</div>
+								<div class="row dep-arr-info dep-2-row text-center">
+									<div class="col-md-4">	
+										<h5><img src="images/info-distance.png"><b>Distance:</b><span class="prnt-dis">54.3 KM</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Duration:</b><span class="prnt-dur">30 Min</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Return:</b><span class="prnt-ret">100 KM</span></h5>
+									</div>
+									
+								</div>
+							</div>
+							
+							<!-- ---------------------- -->
+							<!-- FINE DATI RICERCA -->
+							<!-- ---------------------- -->
+
+							
+							<!-- ---------------------- -->
+							<!-- INIZIO OFFERTE TRANSFERT -->
+							<!-- ---------------------- -->
+							
+							
+							<!-- PRIMA OFFERTA -->
+							<div class="div-sel-car text-center">
+								<div class="row head-sel-car">
+									<h3>Auto Prima Classe 173, 101</h3>
+									<h4>Max 3 suitcases (Mercedes, BMW, Lancia) 1</h4>
+								</div>
+								<div class="row sel-car-btn">
+									<div class="col-md-6">
+										<div>
+											<h4>Acquista Totalmente La Corsa 1</h4>
+											  <label><input type="radio" name="optradio">Paga 173,10</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div>
+											<h4>Acquista Totalmente La Corsa 2</h4>
+											  <label><input type="radio" name="optradio">Paga 500,20</label>
+										</div>
+									</div>
+								</div>
+								<div class="row sel-car-btm-info">
+									<div class="col-md-12">
+										<p>Prezzo tutto compreso iva inclusa 1</p>
+										<p>tariffa per kmL 1,39km 1</p>
+									</div>
+									
+								</div>
+							</div>
+							
+							<!-- SECONDA OFFERTA -->
+							<div class="div-sel-car text-center">
+								<div class="row head-sel-car">
+									<h3>Manual Classe 355, 60€ 2</h3>
+									<h4>Max 3 suitcases (Acura, Audi, Ford) 2</h4>
+								</div>
+								<div class="row sel-car-btn">
+									<div class="col-md-6">
+										<div>
+											<h4>Acquista Totalmente La Corsa 3</h4>
+											  <label><input type="radio" name="optradio">Paga 873,30€</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div>
+											<h4>Acquista Totalmente La Corsa 4</h4>
+											  <label><input type="radio" name="optradio">Paga 773,30€</label>
+										</div>
+									</div>
+								</div>
+								<div class="row sel-car-btm-info">
+									<div class="col-md-12">
+										<p>Prezzo tutto compreso iva inclusa 2</p>
+										<p>tariffa per kmL 1,39€/km 2</p>
+									</div>
+								</div>
+							</div>
+							
+							<!-- ---------------------- -->
+							<!-- FINE OFFERTE TRANSFERT -->
+							<!-- ---------------------- -->
+							
+							
+							<div class="step-w-extra-info">
+								<div class="row">
+									<p>II Transfer puo essere disdetto e rimborsato fino a 24 ore prima del prelevamento.</p>
+									<p>L’eventuale ritardo del Cliente sara successivanmente addebitato al costo di 13€(iva inclusa), oppure pagato all*Austista al prezzo di 10€(iva inclusa) - ogni 30 minuti.</p>
+								</div>
+							</div>
+							
+							<div class="div-verify">
+								<div class="row head-verify">
+									<h3>Invia questa Corsa a un tuo amico o a te stesso</h3>
+									
+								</div>
+								
+								<div class="row row-verify">
+									
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-9">
+												<div class="form-group input-group">
+													<span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+													<input class="form-control" data-error="Please enter Email." id="inputEmail" placeholder="Enter Your Email"  type="email" required />
+												</div>
+											</div>
+											<div class="col-md-3">
+												<input type="button" name="" id="btn-ver-email" value="VERIFY">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-9">
+												<div class="form-group input-group">
+													<span class="input-group-addon"><i class="fas fa-mobile-alt"></i></span>
+													<input class="form-control" data-error="Please enter Phone Number." id="inputPhone" placeholder="Enter Phone Number"  type="text" required />
+												</div>
+											</div>
+											<div class="col-md-3">
+												<input type="button" name="" id="btn-ver-phone" value="VERIFY">
+											</div>
+											<p>Already a member? <a class="phlogin-link">Login</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+									  <button class="btn btn-primary" id="back-2" data-steps="form-step-1" >
+										  BACK
+									  </button>
+									</div>
+								</div>	
+							</div>
+							
+							<div class="pop-up-container pop-up-email">
+								<div class="pop-up">
+									<div class="container">	
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2  text-center">
+												
+												<i class="fas fa-times-circle close-popup"></i>
+												<div class="pop-bg row">	
+													<h4>APOLLO - EMAIL</h4>
+													<div class="col-md-12" >
+														<img src="images/loader.gif">
+													</div>
+													<div class="col-md-6 col-md-offset-3" >
+														<h5>Email INVIATA</h5>
+														<p>Abbiamo inviato la Corsa a <span class="usr-email-out">abc@mail.com<span></p>
+														<input type="button" name="" id="ver-email-pr" value="Proceed">
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							
+							<div class="pop-up-container pop-up-login">
+								<div class="pop-up">
+									<div class="container">	
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2  text-center">
+												<i class="fas fa-times-circle close-popup"></i>
+												<div class="pop-bg row">	
+													<h4>LOGIN</h4>
+													<div style="display:block;" class="col-md-6 col-md-offset-3" >
+														<div class="form-group input-group">
+															<span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+															<input id="logemail" class="form-control" id="inputPhlogin" placeholder="Inserisci Email o Numero di Telefono"  type="text" required />
+														</div>
+														<div class="form-group input-group">
+															<span class="input-group-addon"><i class="fas fa-lock"></i></span>
+															<input id="logpass" class="form-control" id="inputPhpass" placeholder="Inserisci Password"  type="password" required />
+														</div>
+														<input type="button" name="Phlogin" id="ver-login" value="Login">
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							
+							<div class="pop-up-container pop-up-sms">
+								<div class="pop-up">
+									<div class="container">	
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2  text-center">
+												
+												<i class="fas fa-times-circle close-popup"></i>
+												<div class="pop-bg row">	
+													<h4>VERIFICA CODICE SMS</h4>
+													<div class="col-md-12" >
+														<img src="images/loader.gif">
+													</div>
+													<div class="col-md-6 col-md-offset-3" >
+														<div class="form-group input-group">
+															<span class="input-group-addon"><i class="fas fa-lock"></i></span>
+															<input class="form-control" id="inputSmsCode" placeholder="Verifica Codice SMS"  type="tel" pattern="^\d{4}-\d{3}-\d{4}$" required />
+														</div>
+														<input type="button" name="" id="ver-sms-pro" value="Proceed">
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							
+						</div>
+
+
+						<div class="form-step-3 form-steps">
+							<div class="row step-2-conf">
+								<p>Numero Confermato.</p>
+							</div>
+							
+						  <div class="div-dep-2">
+								<div class="row head-dep-2-row">
+									
+									<div class="col-md-6">
+										<h3 class="text-right"><span class="prnt-dep">piazza del popolo, 04100, LATINA</span></h3>
+									</div>
+									
+									<div class="col-md-6">
+										<h3 class="text-left"><span class="prnt-arr">VIA ALDO MORO, 03100, FROSIONE</span></h3>
+									</div>
+									
+								</div>
+								
+								<div class="row dep-arr-info dep-2-row text-center">
+									
+									<div class="col-md-4">
+										<h5><img src="images/info-calendar.png"><b>Date:</b><span class="prnt-date">22 March</span></h5></div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-clock.png"><b>Time:</b><span class="prnt-time">11:00</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-group.png"><b>No. Of Passenger:</b><span class="prnt-pgr">3</span></h5>
+									</div>
+								</div>
+								<div class="row dep-arr-info dep-2-row text-center">
+									<div class="col-md-4">	
+										<h5><img src="images/info-distance.png"><b>Distance:</b><span class="prnt-dis">54.3 KM</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Duration:</b><span class="prnt-dur">30 Min</span></h5>
+									</div>
+									<div class="col-md-4">	
+										
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="div-dep-2 div-dep-2-arr">
+								<div class="row head-dep-2-row">
+									
+									<div class="col-md-6">
+										<h3 class="text-right"><span class="prnt-arr">piazza del popolo, 04100, LATINA</span></h3>
+									</div>
+									
+									<div class="col-md-6">
+										<h3 class="text-left"><span class="prnt-dep">VIA ALDO MORO, 03100, FROSIONE</span></h3>
+									</div>
+									
+								</div>
+								
+								<div class="row dep-arr-info dep-2-row text-center">
+									
+									<div class="col-md-4">
+										<h5><img src="images/info-calendar.png"><b>Date:</b><span class="prnt-date-arr">22 March</span></h5></div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-clock.png"><b>Time:</b><span class="prnt-time-arr">11:00</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-group.png"><b>No. Of Passenger:</b><span class="prnt-pgr">3</span></h5>
+									</div>
+								</div>
+								<div class="row dep-arr-info dep-2-row text-center">
+									<div class="col-md-4">	
+										<h5><img src="images/info-distance.png"><b>Distance:</b><span class="prnt-dis">54.3 KM</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Duration:</b><span class="prnt-dur">30 Min</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Return:</b><span class="prnt-ret">100 KM</span></h5>
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="step-w-extra-info">
+								<div class="row">
+									<p>Classe AutoVeicolo: <span class="carname">Auto Prima Classe</span></p>
+									<p>Prezzo Totale: <span class="carprice">95,15E</span></p>
+									<div class="bottom-p">
+									</div>
+									<h4><span class="carprice">95,15E</span></h4>
+								</div>
+							</div>
+							
+							<div class="row step-2-conf step-3-conf">
+								<p>Utente: <b>Matteo Manili</b> Telefono: <b>123123123</b> Email: <b>abc@gmail.com</b></p>
+							</div>
+							
+							<div class="div-sel-car text-center data-client">
+								<div class="row head-sel-car">
+									
+									<h3>DATI CLIENTE</h3>
+									
+								</div>
+								
+								<div class="row sel-car-btn">
+									
+									<div class="col-md-12">
+										<div class="form-group input-group">
+													<span class="input-group-addon"><i class="fas fa-user"></i></span>
+													<input class="form-control" id="inputName" placeholder="Name"  type="text" required />
+													<div class="help-block with-errors"></div>
+										</div>
+										<div class="form-group input-group">
+													<span class="input-group-addon"><i class="fas fa-user"></i></span>
+													<input class="form-control" id="inputCogname" placeholder="Cogname"  type="text" required />
+													<div class="help-block with-errors"></div>
+										</div>
+										<div class="form-group input-group">
+													<span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+													<input class="form-control" id="inputCliEmail" placeholder="Email"  type="email" required />
+													<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="div-sel-car div-card-detail">
+								<div class="row head-sel-car">
+									<h3>Metodo Pagamento</h3>
+								</div>
+								
+								<div class="row sel-car-btn">
+									<div class="pay-tab">
+										<ul>
+											<li class="wwd-li wwd-1 wwd-li-active"  data-div="wwd-1">CREDIT CARD</li>
+											<li class="wwd-li wwd-2"  data-div="wwd-2">PAYPAL</li>
+										</ul>
+									</div>
+									<div class="wwd-1 sec sec-hide" data-div="wwd-1" style="display: block;">
+										<div class="col-md-12">
+											<div>
+												<div class="form-group input-group">
+														<span class="input-group-addon"><i class="fas fa-user"></i></span>
+														<input class="form-control" id="inputCardName" placeholder="Name"  type="text" required />
+														<div class="help-block with-errors"></div>
+											</div>
+											<div class="form-group input-group">
+														<span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
+														<input class="form-control" id="inputCardNumber" placeholder="Card Number"  type="text" required />
+														<div class="help-block with-errors"></div>
+											</div>
+											<input type="button" name="" value="Esegui Pagamento" id="PaymentBtnCard">
+											</div>
+										</div>
+										<div class="col-md-12 pay-ex-info text-center">
+											<p>Le Transazioni sono Direttamente gestite dai Sistemi STRIPE e PAYPAL non viene memorizzata nessuna infomation nel Sistema</p>
+										</div>
+									</div>
+									<div class="wwd-2 sec sec-hide" data-div="wwd-2" >
+										<div class="col-md-12">
+											<div>
+												<a href="#"><img width="200" src="images/paypalbtn.png">
+												</a>
+											</div>
+										</div>
+										<div class="col-md-12 pay-ex-info text-center">
+											<p>Le Transazioni sono Direttamente gestite dai Sistemi STRIPE e PAYPAL non viene memorizzata nessuna infomation nel Sistema</p>
+										</div>
+									</div>
+								</div>
+							<div class="row">	
+								<div class="form-group">
+								  <button class="btn btn-primary" id="back-3" data-steps="form-step-2" >
+									  BACK
+								  </button>
+								</div>
+							</div>
+							</div>						  
+						</div>
+						
+						<div class="form-step-4 form-steps">
+							
+							<div class="row step-2-conf step-3-conf">
+								<p>Corsa Confermata, Pagamento Eseguito: 95.15E<br>
+Utente Registrato, Le credeziali di accesso sono il tuo Numero di Telefono e la password e il CODICE che ti abbiamo inviato nell'SMS.</p>
+							</div>
+							
+							<div class="row step-2-conf step-3-conf">
+								<p>Vai ala Home per i Dettagli della Corsa</p>
+							</div>
+							
+						  <div class="div-dep-2">
+								<div class="row head-dep-2-row">
+									
+									<div class="col-md-6">
+										<h3 class="text-right"><span class="prnt-dep">piazza del popolo, 04100, LATINA</span></h3>
+									</div>
+									
+									<div class="col-md-6">
+										<h3 class="text-left"><span class="prnt-arr">VIA ALDO MORO, 03100, FROSIONE</span></h3>
+									</div>
+									
+								</div>
+								
+								<div class="row dep-arr-info dep-2-row text-center">
+									
+									<div class="col-md-4">
+										<h5><img src="images/info-calendar.png"><b>Date:</b><span class="prnt-date">22 March</span></h5></div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-clock.png"><b>Time:</b><span class="prnt-time">11:00</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-group.png"><b>No. Of Passenger:</b><span class="prnt-pgr">3</span></h5>
+									</div>
+								</div>
+								<div class="row dep-arr-info dep-2-row text-center">
+									<div class="col-md-4">	
+										<h5><img src="images/info-distance.png"><b>Distance:</b><span class="prnt-dis">54.3 KM</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Duration:</b><span class="prnt-dur">30 Min</span></h5>
+									</div>
+									<div class="col-md-4">	
+										
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="div-dep-2 div-dep-2-arr">
+								<div class="row head-dep-2-row">
+									
+									<div class="col-md-6">
+										<h3 class="text-right"><span class="prnt-arr">piazza del popolo, 04100, LATINA</span></h3>
+									</div>
+									
+									<div class="col-md-6">
+										<h3 class="text-left"><span class="prnt-dep">VIA ALDO MORO, 03100, FROSIONE</span></h3>
+									</div>
+									
+								</div>
+								
+								<div class="row dep-arr-info dep-2-row text-center">
+									
+									<div class="col-md-4">
+										<h5><img src="images/info-calendar.png"><b>Date:</b><span class="prnt-date-arr">22 March</span></h5></div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-clock.png"><b>Time:</b><span class="prnt-time-arr">11:00</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-group.png"><b>No. Of Passenger:</b><span class="prnt-pgr">3</span></h5>
+									</div>
+								</div>
+								<div class="row dep-arr-info dep-2-row text-center">
+									<div class="col-md-4">	
+										<h5><img src="images/info-distance.png"><b>Distance:</b><span class="prnt-dis">54.3 KM</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Duration:</b><span class="prnt-dur">30 Min</span></h5>
+									</div>
+									<div class="col-md-4">	
+										<h5><img src="images/info-duration.png"><b>Return:</b><span class="prnt-ret">100 KM</span>Km</h5>
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="step-w-extra-info">
+								<div class="row">
+									<p>Classe AutoVeicolo: <span class="carname">Auto Prima Classe</span></p>
+									<p>Prezzo Totale: <span class="carprice">95,15E</span></p>
+									<div class="bottom-p">
+									</div>
+									<h4><span class="carprice">95,15E</span></h4>
+								</div>
+							</div>
+													  
+						</div>
+						
+						
+					</form>
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+	
+<?php include 'footer.php';?>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>$webAppName | Agenda-Tariffario Autista</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Autista $nomeCognome</h2>
+	
+	<p>Approfitta di questo periodo di non attività per imparare a usare la Agenda Autista.<br>
+	L'Agenda una volta configurata basterà un solo click per indicare il tuo giorno lavorativo in cui $webAppName venderà le Corse per te.<br>
+	Segui il video sotto indicato oppure telefonami al 328.912.6869.</p>
+	
+	<p>La <strong>AGENDA AUTISTA</strong> è entrata online ed è già attiva per vendere Corse. Abbiamo creato una playlist di 7 video su youtube raggiungibili dalla pagina <a href="https://www.youtube.com/playlist?list=PLQ1aJ0zetbCIbZKtChcEeTW8c14MHMleI">www.youtube.com/playlist?list=PLQ1aJ0zetbCIbZKtChcEeTW8c14MHMleI</a> che spiega il funzionamento.</p>
+	
+	<p>L'Agenda è raggiungibile da telefono smartphone o computer al link $linkPagina_AgendaAutista . Non c'è bisogno di scaricare nessuna APP, è sufficiente usare il vostro browser (Google Chrome o Safari).</p>
+	
+	<p>L'Agenda permette di comunicare ad $webAppName i tuoi Giorni e Orari disponibili alla vendita e di impostare i tuoi Prezzi.</p>
+	
+	<p>La AGENDA AUTISTA all'inizio potrà sembrare complessa ma una volta compreso il funzionamento risulterà veloce e pratica da usare.</p>
+	
+	<p>
+	I Vantaggi sono: 
+	<ul>
+	<li>Il Cliente visualizza immediatamente il tuo prezzo e potrà subito acquistare il Servizio.</li>
+	<li>Decidi in quali Giorni e Orari sei disponibile ai servizi.</li>
+	<li>Imposti un dettagliato tariffario in relazione ai <u>Giorni</u>, <u>Orari</u> e <u>Numero Chilometri Corsa</u>.</li>
+	<li>Eviti di inviare scomodi e lenti preventivi (a parte per richieste di servizi particolari).</li>
+	</ul>
+	</p>
+	
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

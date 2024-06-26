@@ -1,0 +1,878 @@
+.panel-body {
+	color: black;
+}
+
+.panel-footer {
+	color: black;
+}
+
+.panel-body-white {
+	background-color:#000;
+	padding: 15px;
+	color: white;
+}
+
+.radio-ric-transfer {
+	-webkit-appearance:button;
+	-moz-appearance:button;
+	appearance:button;
+	border:4px solid #ccc;
+	border-top-color:#bbb;
+	border-left-color:#bbb;
+	background:#fff;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+}
+
+.radio-ric-transfer:checked{ 
+	border:20px solid #4099ff; 
+}
+
+/* The container */
+.custom-check {
+	padding-top: 4px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 19px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.custom-check {
+    /* color: #fff; */
+    position: absolute;
+    top: 0px;
+    right: -75px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-check:hover input ~ .checkmark { 
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-check input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-check .checkmark:after {
+    left: 14px;
+    top: 10px;
+    width: 8px;
+    height: 14px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ret-txt {
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.return-date-time {
+	display:none;
+	transition: all ease-in .3s;
+}
+
+.form-step-2,.form-step-3 ,.form-step-4  {
+	display:none;
+}
+
+.btn.disabled{
+pointer-events: none;}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.phlogin-link{cursor:pointer;}
+.info-row h3 {
+    padding: 15px 0px 15px 50px;
+    color: #fff;
+    font-size: 17px;
+    background: #1b74bb;
+    position: relative;
+	    margin: 0;
+}
+
+.info-row h3 img {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.info-row ul {
+    border: 1px solid #828990;
+    background: #c0c0c0;
+    padding: 0px 20px;
+    list-style-type: none;
+    margin: 0 0 30px;
+}
+
+.info-row li {
+    padding: 6px 0px;
+    color: #000;
+    background: #c0c0c0;
+    border-bottom: 1px solid #828990;
+}
+
+
+.info-row li.last {
+    border-bottom: none;
+}
+
+.info-row h2 {
+    margin: 0;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    padding-left: 42px;
+    padding-bottom: 20px;
+}
+
+.info-row h2 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.row.info-row {
+    margin-top: 50px;
+}
+
+
+.row.head-dep-2-row h3 {
+    padding: 14px 20px;
+    font-size: 25px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.row.head-dep-2-row{
+	background:url(images/to-arrow.png) 0 0 no-repeat;
+    background-position: center;
+    background-color: #1b74bb;}
+
+.dep-arr-info ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.dep-arr-info h5 {
+	padding: 19px 30px;
+	margin: 0;
+    display: inline-block;
+    color: #262626;
+    font-size: 20px;
+    position: relative;
+}
+.dep-arr-info {
+	padding: 0 100px;
+	background: #D0D0D0; /*rgba(255, 255, 255, 0.75);*/
+}
+
+.dep-arr-info h5 b {
+    padding-right: 15px;
+color: #000;}
+
+.dep-arr-info h5 img {
+	position:absolute;
+	top:21px;
+	left:0;
+}
+
+.div-dep-2 {
+    margin-bottom: 30px;
+}
+
+.head-sel-car h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.head-sel-car h4 {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.head-sel-car {
+	background:#1b74bb;
+}
+
+.sel-car-btn {
+	color: #000;
+}
+
+.row.sel-car-btn {
+	background: #D0D0D0; /*rgba(255, 255, 255, 0.75); */
+    padding: 30px 20px 25px;
+}
+
+
+.button-acquista-corsa {
+	padding-top: 20px;
+    padding-bottom: 10px;
+    background: #f0f2f4;
+    border: 1px solid #76797d;
+}
+
+
+.row.sel-car-btn .col-md-6 h4 {
+    color: #000;
+    font-size: 16px;
+	margin: 0 0 15px;
+}
+
+.row.sel-car-btn .col-md-6 label:hover {background: #0c5b9a;}
+.row.sel-car-btn .col-md-6 label {
+	cursor:pointer;
+    color: #fff;position:relative;
+    background: #1b74bb;
+    font-size: 14px;
+    border: none;
+    padding: 8px 30px;
+	display: inline-block;
+}
+
+.row.sel-car-btm-info p {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+}
+
+.sel-car-btm-info {
+    border-top: 3px solid #858585;
+	padding:15px 0;
+	background: #D0D0D0; /* rgba(255, 255, 255, 0.75); */
+}
+
+.div-sel-car {
+	margin-bottom:40px;
+}
+
+.step-w-extra-info p {
+    font-size: 16px;
+}
+
+/*
+.step-w-extra-info {
+    padding-bottom: 30px;
+}
+*/
+
+.row.head-verify h3 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+}
+.row.head-verify {
+    background: #1b74bb;
+    padding: 20px 30px;
+}
+
+.row-verify {
+    padding: 20px 15px;
+	background: #D0D0D0; /*rgba(255, 255, 255, 0.75);*/
+	color: #000;
+}
+	
+.row-verify .form-group {
+    margin: 0;
+    border: 1px solid #000;
+    
+}
+.row-verify input[type="button"] {
+    background: #1b74bb;
+    border: 0;
+    color: #fff;
+    font-size: 19px;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 7.5px 0;
+}
+
+.row.row-verify .col-md-9, .row.row-verify .col-md-3 {
+    padding: 0 5px;
+}
+
+.row-verify .row {
+    padding: 0 15px;
+}
+
+.div-verify {
+    margin-bottom: 20px;
+}
+
+.row.step-2-conf p {
+    font-size: 12.5px;
+    color: #000;
+    margin: 0;
+}
+
+.row.step-2-conf {
+	margin-bottom:30px;
+    background: #96bccf;
+    padding: 16px 30px;
+}
+
+.step-3-conf {
+ background: #a4d9f3;
+}
+ 
+.step-w-extra-info h4 {
+    font-size: 33px;
+}
+
+.data-client .form-group {
+    border: 1px solid #191919;
+	margin-bottom: 25px;
+}
+
+.data-client .sel-car-btn {
+    padding: 30px 60px 5px;
+}
+
+.data-client .input-group .form-control {
+background: transparent;}
+
+.pop-up {
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    background: #0009;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.pop-up h4 {
+    background: #1b74bb;
+	margin:0;
+    font-size: 22px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.pop-bg {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.pop-up h5 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 30px;
+}
+
+.pop-up p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.pop-up input[type="button"] {
+    background: #1b74bb;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    padding: 12px 30px;
+    margin-bottom: 40px;
+    border: 1px solid #000;
+}
+
+.pop-up-container{display:none;}
+
+.pop-up .form-group {
+    background: #fff;
+    margin-top: 40px;
+    border: 1px solid #000
+}
+
+.pop-up .form-group .form-control ,.pop-up .form-group .input-group-addon{
+background: #fff;font-size:18px;}
+
+.pay-tab ul {
+    list-style-type: none;
+    margin: 0;
+}
+.pay-tab ul li {
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+    color: #000;
+    padding: 10px 35px 10px;
+        border: 1px solid #000000;
+}
+
+
+
+.pay-tab ul li.wwd-li-active {
+    color: #fff;
+	background:#1b74bb;
+    border-color: #1b74bb;
+}
+
+.div-card-detail .col-md-12 {
+    padding: 0px 0px;
+    border: 0px solid #000;
+	border: 0px solid #000;
+}    
+
+
+.div-card-detail .form-group {
+    border: 1px solid #191919;
+    margin-bottom: 25px;
+}
+
+.div-card-detail input[type="button"] {
+    background: #1b74bb;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+        border: 1px solid #000;
+    padding: 12px 30px;
+}
+
+.pay-ex-info {
+    border: 1px solid #000;
+	border-top: none !important;
+    padding: 20px 0px;}
+.pay-ex-info p {
+	    margin: 0;
+	color:#000;
+	font-size:16px;
+}
+
+.div-card-detail h3 ,.data-client h3{
+    padding: 14px 20px;
+    font-size: 25px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.sec-hide {display:none;}
+
+.div-dep-2-arr {display:none; }
+
+.row-verify .has-error .input-group-addon {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+.has-error .input-group-addon {
+    background-color: background-color: rgba(255, 255, 255, 0.75);
+}
+
+#back-2 ,#back-3{
+    margin-top: 40px;
+}
+
+.close-popup {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    color: #ffffff;
+    font-size: 24px;
+    background: #1b74bb;
+    border-radius: 50%;
+    border: 2px solid #1b74bb;
+	cursor:pointer;
+}
+
+.sec .input-group .form-control {
+background: transparent;}
+
+li.wwd-li {
+    cursor: pointer;
+}
+
+.has-error .form-control:focus {
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.row-verify .input-group .form-control ,.row-verify .input-group-addon {
+	background: transparent;
+}
+
+.list-unstyled {
+    margin: 0;
+padding: 0 10px;}
+
+.pop-up img {margin: 40px auto;
+    width: 100px;
+}
+
+.with-errors {
+    display: none;
+}
+
+.has-error .with-errors {
+    display: block;
+}
+
+.form-step-3 .input-group-addon {
+background: transparent;}
+
+@media (min-width:1200px){
+}
+
+@media (min-width:980px) and (max-width:1030px){
+}
+
+@media (min-width:768px) and (max-width:979px){
+		
+	.date-control, .time-control {
+		width: 38%;
+	}
+	
+	.head-dep-2-row .col-md-6 {
+    width: 50%;
+    float: left;
+}
+.div-dep-2 {
+overflow: hidden;}
+
+.div-sel-car {
+overflow: hidden;}
+
+.row.sel-car-btn .col-md-6 {
+    margin-bottom: 10px;
+}
+
+.row.sel-car-btn .col-md-6 div:after {
+	display:none;
+}
+
+.sel-car-btm-info {
+	border-top: 1px solid #000;
+}
+
+.step-w-extra-info .row {
+    margin: 0;
+}
+
+.div-verify {
+    padding: 0 15px;
+}
+
+.row-verify .form-group {
+    margin-bottom: 20px;
+}
+
+.row-verify input[type="button"] {
+	margin-bottom: 30px;
+}
+
+.form-step-3 .row.sel-car-btn {
+    padding: 15px 30px;
+}
+
+.sec {
+    margin-top: 46px;
+}
+
+.form-step-3.form-steps {
+    overflow: hidden;
+}
+
+.form-step-4 {
+    overflow: hidden;
+}
+
+}
+
+@media (max-width:767px) {
+	.head-sel-car {
+    	padding: 0 30px;
+    }
+	.form-step-3.form-steps {
+    	overflow: hidden;
+	}
+	.form-step-4 {
+    	overflow: hidden;
+	}
+	.info-row h3 img {
+    	left: 16px;
+    	top: 22px;
+	}
+
+.row.steps-row ul li.second, .row.steps-row ul li, .row.steps-row ul li.third, .row.steps-row ul li.last {
+    width: 48% ;
+    margin-bottom: 15px;
+}
+
+.row.steps-row {
+	padding: 30px 0 0px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.head-dep-2-row .col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.div-dep-2 {
+	overflow: hidden;
+}
+
+.div-sel-car {
+	overflow: hidden;
+}
+
+.row.sel-car-btn .col-md-6 {
+    margin-bottom: 10px;
+}
+
+.row.sel-car-btn .col-md-6 div:after {
+	display:none;
+}
+
+.sel-car-btm-info {
+	border-top: 1px solid #000;
+}
+
+.step-w-extra-info .row {
+    margin: 0;
+}
+
+.div-verify {
+    padding: 0 15px;
+}
+
+.row-verify .form-group {
+    margin-bottom: 20px;
+}
+
+.row-verify input[type="button"] {
+	margin-bottom: 30px;
+}
+
+.dep-arr-info {
+padding: 0;}
+
+.sec {
+    margin-top: 46px;
+}
+
+.date-control, .time-control {
+    width: 100%;
+}
+.time-control {
+    margin-bottom: 65px;
+}
+
+.return-date-time .date-control, .return-date-time .time-control {
+    width: 100%;
+} 
+
+.return-date-time .time-control {
+    margin-bottom: 20px;
+}
+
+.custom-check {
+    right: 0;
+    width: 35px;
+    background-color: transparent;
+    left: -15%;
+    margin: auto;
+    top: 130%;
+}
+
+}
+
+@media (max-width:480px) {
+		
+	.row.steps-row ul li {
+	font-size: 13px;
+	}
+
+	
+	.input-group .form-control {
+	font-size: 16px;}
+	.custom-check {
+	right: -50px;
+	width: 35px;
+	background-color: transparent;
+	}
+	
+	.row.steps-row {
+    padding: 20px 0 10px;
+}
+
+.form-group {
+margin-bottom: 20px;}
+
+.time-control {
+    margin-bottom: 65px;
+}
+
+.return-date-time .time-control {
+    margin-bottom: 20px;
+}
+
+.info-row h2 img {
+    position: absolute;
+    left: 0;
+top: 12px;}
+
+.row.head-dep-2-row h3 {
+font-size: 18px;}
+
+.dep-arr-info h5 {
+    padding: 11px 30px;
+font-size: 16px;}
+
+.dep-arr-info h5 img {
+top: 10px;}
+
+.row.sel-car-btn {
+    padding: 20px 20px;
+}
+
+.sec {
+    margin-top: 46px;
+}
+
+}
+
+@media (max-width:380px) {
+
+	.date-control, .time-control {
+	    width: 100%;
+	}
+	
+	.time-control {
+	    margin-bottom: 65px;
+	}
+	
+	.return-date-time .date-control, .return-date-time .time-control {
+	    width: 100%;
+	} 
+	
+	.return-date-time .time-control {
+	    margin-bottom: 20px;
+	}
+	
+	.custom-check {
+	    right: 0;
+	    width: 35px;
+	    background-color: transparent;
+	    left: -15%;
+	    margin: auto;
+	    top: 130%;
+	}
+	
+	.main-heading-row h1 {
+		font-size: 30px;
+	}
+	
+	.row.sel-car-btn {
+	    background: rgba(255, 255, 255, 0.75);
+	    padding: 15px 20px;
+	}
+	
+	.form-step-3 .row.sel-car-btn {
+	    background: rgba(255, 255, 255, 0.75);
+	    padding: 15px 25px;
+	}
+	
+	.pay-tab ul li {
+	    font-size: 16px;
+		padding: 8px 15px;
+	}
+	
+	.sec {
+	    margin-top: 39px;
+	}
+	
+	.div-card-detail input[type="button"] {
+		font-size: 14px;}
+	
+	.div-card-detail h3, .data-client h3 {
+		font-size: 18px;}
+
+}
+
+.pop-up-login img {
+    display: none;
+}
+
+.row-verify p {
+    color: #000;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 5px 0 0;
+}
+.row.sel-car-btn .col-md-6 label.active{background: #0c5b9a;}
+.row.sel-car-btn .col-md-6 input[type="radio"] {
+	cursor:pointer;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}

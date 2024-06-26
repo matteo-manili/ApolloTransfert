@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Richiesta Preventivo Corsa $corsaId</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Autista $nomeCognome</h2>
+	
+	<p><big>Un Cliente ha richiesto il Preventivo per la Corsa numero: $corsaId</big></p>
+	
+	<p>$infoCorsa </p>
+	
+	<p>$corsaPartenzaArrivo </p>
+	
+	<p>$notePerAutista </p>
+	
+	<p>$linkGestioneCorsaAutista </p>
+	
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Corsa Confermata $corsaId</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+<body>
+	<h2>Gentile Autista $nomeCognome</h2>
+	
+	<p><big>Le confermiamo la Corsa numero: $corsaId </big></p>
+	
+	<p>$infoCorsa </p>
+	
+	<p>$corsaPartenzaArrivo </p>
+	
+	<p>$notePerAutista </p>
+	
+	<p>$linkGestioneCorsaAutista </p>
+	
+	<p><em>$numOreInfoAutistaCliente </em></p>
+	
+	<p>$datiFatturazioneEmail </p>
+	
+	<p><em>*Le forniamo una copia della fattura del Cliente che dimostrer&agrave; l'ora e il giorno della prenotazione della Corsa nel caso in cui le venisse richiesto un controllo.
+	</em></p>
+
+	$INCLUDE_FOOTER_EMAIL
+			
+</body>
+</html>

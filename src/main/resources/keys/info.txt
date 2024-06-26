@@ -1,0 +1,133 @@
+
+IMPLEMENTAZIONE DI DKIM (Signfica inserire nell'intestazione della email inviata delle informazioni che rendono la mail attendibile che proviene dal suo dominio)
+DKIM consiste nell'inserire dei recordi nel DNS del dominio (www.apollotransfert.com) il cui valore combacia con il certificato che viene 
+inserito nell'intestazione della email.
+Il provider di email del destinatrio prenderà le info DNS del dominio del mittente e le confornta con i valori nell'intestazione della email. 
+Se combaciano significa che la email è attndibile.
+
+--------------------------------------------------------------------
+Le classi com.apollon.webapp.util.email.dkim inseriscono nell'intestazione della email le informazioni
+
+
+----------------------------------------------------------------------
+SCARICARE e INSTALLARE OPENSSL, per creare il certificato di solito è un .der
+c'è bisogno di una chiave privata (Private Key) generato a random chiamata RSA, diversi siti lo fanno
+per esempio:
+http://dkimcore.org/tools/key/1498154410-7f2198f209be058cec72bb9acb8eda7d/
+https://www.socketlabs.com/domainkey-dkim-generation-wizard/
+restituisce un testo di questo tipo:
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAnZHcTYHzBu7WKyIlgjYZmuYDaw9LSB/K6tuk24ziptCAmj+R
+................................................................
+................................................................
+................................................................
+-----END RSA PRIVATE KEY-----
+
+da salvare in un file con formato .pem e quindi sottoporlo al setup per creare il .der con le istruzioni qui di seguito.
+
+avviare la shell per windowd di OPENSSL e generare una certificato .der
+- a DKIM key setup:
+
+  a) a private key on your hard disc (e.g. in keys/); you can generate a new key by
+
+   > openssl genrsa -out private.key.pem (senza che vai sui siti a farlo)
+ 
+     DKIM for JavaMail needs the private key in DER format, you can transform a PEM key
+     with openssl:
+
+   > openssl pkcs8 -topk8 -nocrypt -in dkim.private.key.pem -out dkim.private.key.der -outform der
+
+
+  b) a public key in your DNS; here is a sample ressource record with selector "default":
+     default._domainkey IN TXT "v=DKIM1; g=*; k=rsa; p=MIG...the_public_key_here...AQAB"
+     (see http://www.ietf.org/rfc/rfc4871.txt for details)
+     
+     You can use openssl to get a public key from the private key:
+   
+   > openssl rsa -inform PEM -in dkim.private.key.pem -pubout
+
+
+--------------------------------------------------------------------
+Generare Chiavi DKIM:
+http://dkimcore.org/tools/key/1498154410-7f2198f209be058cec72bb9acb8eda7d/
+https://www.socketlabs.com/domainkey-dkim-generation-wizard/
+
+GENERATOR DI KIAVI PARTENDO DA UN DOMINIO E UN SELECTOR (NOME SCELTO)
+
+--------------------------------------------------------------------
+RISULTATO PAGINA https://www.socketlabs.com/domainkey-dkim-generation-wizard/ 
+
+Domain Key / DKIM Generation Wizard
+This wizard will generate the public / private 1024 bit key pair you will need to setup DomainKeys/DKIM and will give you specific instructions on how to setup Hurricane Server and your DNS server.
+You must specify a domain and a selector. The domain and the selector are not used in the generation of the public / private key pair. They will only be used to provide server and DNS setup instructions specific to you.
+DomainKeys validate that the domain of the from address matches the domain that is sending the message. DomainKeys do not validate the domain of the return path. You must specify the domain that you will use in the from address (From: header) of your messages. (If you will be sending out mail from multiple domains, you will need to go through this process for each one.)
+A single domain can use more than one set of DomainKeys. You must specify a selector which will be used to specify (or “select”) the set of DomainKeys you will be using to sign your messages. If you are only going to use one set of DomainKeys, it does not matter what you enter and you can use something like “key1”.
+1024 Bits  2048 Bits
+Domain: 
+www.apollotransfert.com
+
+Selector: 
+selector_apollo
+
+
+Generate
+DomainKeys Generated!
+Your keys have been generated. Please note that each time you press the generate button, a new and unique public/private key pair is generated. The public key from one pair is not compatible with the private key from another generated pair.
+Setting up Your Server
+
+Use the following values for the DomainKeys/DKIM settings on your email server:
+
+Domain:	www.apollotransfert.com
+
+Selector: selector_apollo
+
+Private Key:
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAnZHcTYHzBu7WKyIlgjYZmuYDaw9LSB/K6tuk24ziptCAmj+R
+3I8KqOM3NkDnv/SSm84au8gvWfjENPC324gp22Jd9P7Vb/jnK5wBoqNnETYM6FSL
+yeJ+C5Acf0MsBv4WupYi1AVHScazYcAbw5QATAMoo5V/9nxC9Hj80QlGTO2E4DMP
+oeA+Up0W28OlVOSg4g5/Q/zUxzg3vejr6sxJfThs+Ag0lBRJfw6unfhUQqZLddnX
+3AlGHRNonDP/FHDgxqAQpzLOA3X1S958f36rn/zLpe9eATwJoWjwBCa3+Gbx6OXs
+aEuHIHbAZU9D8Q/6WrKUoejCcT0MfAgl9VMMqwIDAQABAoIBAE9p4gRWSCvoV5xp
+m0njBkihQHvGu4RgMZ7okE/u05SLZSVYgKUOmqq/yWXYlHSUSQepeqPFosfPruOX
+prJIEAB3tS7y+JN0eN3rxI85l4p/GUZGxiU7t5cQTKx/KENl8AKeBHOjLWircmED
+t3p8ryGgPe0kPdf2jLA2AgVAjWPbTxaeMcCBrzJstKz5hY+PPELVAGriilXSGEdH
+nt6sV2IOAlPJwpHLeWGGavoekzxmKexafXXWeAKnodakz4ZVKpWeU2vyGgPUbG8v
+xFSjvOpmPGDEeL1OVXcn1Cakn9WFg9e4DxuhGHm/EthjJi6ZyUJpga+XJB13JPgc
+x6hC8jECgYEA0CvaRlg2D6eWE8zIJvUnT7ZPPC6rJzwQnUx5U41Gw05NMAE7aYcr
+bza2pRDvg0AGgEDN6FRsm8tqtCbLl517uxua5qWEhJLqnYk85Pb7Vbrd1HFgWySV
+2Bk0mBLntmRJbthziwS4Ic1w4GGwTVSLULPrKetZKbVHNn8QgWqv25cCgYEAwcW+
+nCCzKOKlXLwQ0acdoGVyoXBpTrx9weXtWqdAL/6LeDnnRCXtjk3dJBmd9Qb0Ie5/
+g1RtkwMeLwIDThCpJ2Hw7VlL5uZhRVkZM6waWa0bUR6CcZJ72qcOmpPoga2enBbB
+qXSv9qPlPaEUrIilZur6SmKJ7O5oD1Eb6sDXCg0CgYB8mBKfkcJhokNf/Gw7bPWn
+bw2Djscfx4KGMzRWvrMAyEfImKQvqBhmCxBMQZOpMdPyRVc4W/dZU+m8g4/NYhOh
+TIdszto+4xQLUA2jWPPbPunwch9izcXlvkhNUNtgvit5bZHSPfPbP3P0yGNWFWkA
+137D6znFjdtekbSWUP2KZwKBgB22NYj5Fp+hSRvUFnwfNNLAW3hXpT4Wdu4BVIi+
+9n+ldztDHav8aNWWKN99MhQ9Mbf2OwUnL/oH01v/4gPZWCaaxPeP5qyMDMQ2aj/b
+FttDSNoCZJwHiwg2721SWqdvuM9USfOy2bxm2yK9DU97UGlchG5dd6qlz7zxgedY
+FGENAoGBAM20EE1/fQ06Zy6g9pkLLseu+L/zw6lQbkWazc5gKsm4t5fb7edLG+tE
+Ae/Y9+O7K3GsVh9kBGg9DR4orJ3Gar8nThHTs9WNfOkX5dXwvDJ8sB8WdBud4g1R
+cT90w/Ja1J9y5WK8wW5l5Ig+dVrra+0+iNYosYklNgJVFIghmHjl
+-----END RSA PRIVATE KEY-----
+
+
+Setting up your DNS
+You will need to create two text records to your DNS server with the following information:
+
+
+NOME: _domainkey.www.apollotransfert.com	
+
+VALORE: t=y;o=~;
+
+
+NOME: selector_apollo._domainkey.www.apollotransfert.com	
+
+VALORE: k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnZHcTYHzBu7WKyIlgjYZ
+muYDaw9LSB/K6tuk24ziptCAmj+R3I8KqOM3NkDnv/SSm84au8gvWfjENPC324gp
+22Jd9P7Vb/jnK5wBoqNnETYM6FSLyeJ+C5Acf0MsBv4WupYi1AVHScazYcAbw5QA
+TAMoo5V/9nxC9Hj80QlGTO2E4DMPoeA+Up0W28OlVOSg4g5/Q/zUxzg3vejr6sxJ
+fThs+Ag0lBRJfw6unfhUQqZLddnX3AlGHRNonDP/FHDgxqAQpzLOA3X1S958f36r
+n/zLpe9eATwJoWjwBCa3+Gbx6OXsaEuHIHbAZU9D8Q/6WrKUoejCcT0MfAgl9VMM
+qwIDAQAB
+

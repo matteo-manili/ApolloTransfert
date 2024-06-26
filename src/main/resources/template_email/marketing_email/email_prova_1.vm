@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Tariffe $webAppName</title>
+	<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+</head>
+
+	<body style="padding: 0;background-color: #FFF;font-family: arial;margin: 0!important;">
+        <div class="wrapper" style="width: 100%;table-layout: fixed;">
+            <div class="wrapper-inner" style="width: 100%;background-color: #121212;max-width: 670px;margin: 0 auto;">
+                <table class="main-table-first" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;margin-top: 25px;">
+                    <tr>
+                        <td class="two-column" style="padding: 5px 0 10px 0;background-color: #121212;color: azure;text-align: center;font-size: 0;">
+                            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                                <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                    <tr>
+                                        <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;">
+                                            <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                                <tr>
+                                                    <td align="center" style="padding: 0;background-color: #121212;color: azure;">
+                                                        <img src="https://www.apollotransfert.com/nuova_grafica/images/email_images/logo.png" class="logo" style="border: 0;float: left;margin-left: 5%;width: 100%;max-width: 200px!important;height: auto;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!--- End First Column of Two Columns -->
+                            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                                <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                    <tr>
+                                        <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;">
+                                            <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                                <tr>
+                                                    <td style="padding: 0;background-color: #121212;color: azure;">
+                                                        <div id="callout" style="float: right;margin: 4% 5% 2% 0;height: auto;overflow: hidden;">
+                                                            <ul class="social" style="list-style-type: none;margin-top: 1%;padding: 0;">
+                                                                <li style="display: inline-block;"><p style="margin: 0;"><b style="color: #1B6EB1">Matteo Manili</b></p></li>
+                                                                <li style="display: inline-block;"><a href="mailto:matteo.manili@gmail.com" style="color: #1B6EB1;text-decoration: none;">&lt;matteo.manili@gmail.com&gt;</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!--- End Second Column of Two Columns -->
+                        </td>
+                    </tr> <!--- End Two Column Section -->
+                    <tr>
+                        <td style="padding: 0;background-color: #121212;color: azure;">
+                            <hr style="border-color: #1B6EB1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0;background-color: #121212;color: azure;">
+                            <p class="h1" style="margin: 12px 0 20px 0;font-weight: 600;line-height: 45px;color: #1B6EB1;text-align: center!important;font-size: 25px!important;"><span style="color: azure">Salve da </span><a href="" style="color: #1B6EB1;text-decoration: none;">Apollo Transfert</a></p>
+                            <p style="color: azure;margin: 0;"><b>Gentile 100 Digital Creativity, Inc, </b>Siamo Lieti di Presentarti il nuovo<b> Ambiente per Venditori</b>dove potrai Guadagnare Provvigioni dalla vendita di Transfer.</p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table class="outer-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 670px;margin: 0 auto;background-color: #FFF;">
+                    <tr>
+    				    <td class="image" style="padding: 0;background-color: #121212;color: azure;">
+    					   <a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">
+                               <div style="position: relative; text-align: center; color: white">
+                                   <img class="image" style="opacity: 0.9;border: 0;width: 100%;max-width: 670px;height: auto;color: black;" src="https://www.apollotransfert.com/nuova_grafica/images/email_images/banner.jpg">
+                                </div>
+                            </a>
+    				    </td>
+                    </tr> <!--- End Banner -->
+                </table> <!--- End Outer Table -->
+                
+                <table class="main-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+                    <tr>
+                        <td class="two-column" style="padding: 5px 0 10px 0;background-color: #121212;color: azure;text-align: center;font-size: 0;">
+                            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                                <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                    <tr>
+                                        <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;">
+                                            <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                                <tr>
+                                                    <td class="text" style="padding: 10px 0;background-color: #121212;color: azure;">
+                                                        
+                                                        <p style="margin: 0;">Si tratta di una <b style="color: #1B6EB1">Applicazione Web <a href="" style="color: #1B6EB1;text-decoration: none;">www.ncctransferonline.it</a></b> dove potrai Vendere Transfer ai tuoi Clienti <b style="color: #1B6EB1">Ricevendo una commissione.</b> Tutto ciÃ² che devi fare Ã¨ invitare ad acquistare i Transfer ai tuoi Clienti (o tu per loro) dalla Pagina <b style="color: #1B6EB1"><a href="" style="color: #1B6EB1;text-decoration: none;">www.ncctransferonline.it</a></b>Il Cliente inserirÃ  il tuo <b style="color: #1B6EB1">Codice-Venditore</b> e acquistata la Corsa ti</p>
+                                    
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!--- End First Column of Two Columns -->
+    				        <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                                <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                    <tr>
+                                        <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;">
+                                            <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                                <tr>
+                                                    <td class="text" style="padding: 10px 0;background-color: #121212;color: azure;">
+                                                        <p style="margin: 0;">pagheremo la commissione via PayPal o via Bonifico. Il Cliente <b style="color: #1B6EB1">non</b> sarÃ  a conoscenza della Commissione, ma solo del Prezzo Totale.</p>
+                                                        <p style="margin: 0;">Tutte le Corse Acquistate con il tuo Codice-Venditore ti sarÃ  riconosciuta la commissione. Vai qui per maggiori Informazioni e per fare la Simulazione di una Corsa Venduta <b style="color: #1B6EB1"><a href="" style="color: #1B6EB1;text-decoration: none;">www.apollotransfert.com/venditore</a></b></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+    				        </div> <!--- End Second Column of Two Columns -->
+                        </td>
+                    </tr> <!--- End Two Column Section -->
+                </table> <!--- End Main Table -->
+               
+                
+                                                
+                                                <div class="discount" style="font-family: 'Roboto Slab', serif;width: auto;height: auto;border: 5px solid #1B6EB1;background-color: #121212;color: white;">    
+                                                    <p align="center" class="text6" style="margin: 0;font-size: 150%;padding: 10px;">!!! OFFERTA <span style="color: #1B6EB1">UOVEBENN !!!</span></p>
+
+                                                    <table align="center" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                                        <tr>
+                                                            <td align="right" style="padding: 0;background-color: #121212;color: azure;">
+                                                                <p style="margin: 0;"><span class="text1" style="font-size: 150%;margin-bottom: 0px;padding-bottom: 0px;">SCON TO 5%</span><br><span class="text2" style="font-size: 300%;margin-top: 0px;padding-top: 0px;color: #1B6EB1;">&xrArr;</span></p>
+                                                            </td>
+                                                            <td style="padding: 0;background-color: #121212;color: azure;">
+                                                                <div class="inner-discount" style="font-family: 'Roboto Slab', serif;margin: 10px;padding: 10px;border: 5px solid #1B6EB1;">
+                                                                <p class="text4" align="center" style="margin: 0;font-size: 150%;color: white;">6N88W5</p>
+                                                                </div>
+                                                            </td>
+                                                             <td style="padding: 0;background-color: #121212;color: azure;">
+                                                                 <p style="margin: 0;"><span class="text1" style="font-size: 150%;margin-bottom: 0px;padding-bottom: 0px;">SCON TO 5%</span><br><span class="text2" style="font-size: 300%;margin-top: 0px;padding-top: 0px;color: #1B6EB1;">&xlArr;</span></p> 
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <p align="center" class="text6" style="margin: 0;font-size: 150%;padding: 10px;">VAUDO PER AESBSO DI UN TRANSFER <span style="color: #1B6EB1">PER NVOVI WIONTI DA UTOIWZZO RIOEN</span></p>
+                                                </div> 
+                                            
+                                         <!--- End Outer Table -->
+                
+                <table class="main-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+                    <tr>
+                        <td class="two-column" style="padding: 5px 0 10px 0;background-color: #121212;color: azure;text-align: center;font-size: 0;">
+                            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                                <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                    <tr>
+                                        <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;">
+                                            <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                                <tr>
+                                                    <td class="text" style="padding: 10px 0;background-color: #121212;color: azure;">
+                                                        <div class="box-boder" style="border: 4px solid #1B6EB1;padding-right: 4px;padding-top: 5px;">
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Transfer Milano</p>
+                                                        </div>
+                                                        <div class="box-boder" style="border-top: 0;border: 4px solid #1B6EB1;padding-right: 4px;padding-top: 5px;">
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Porto di Gaeta 173 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 205.60 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 238.06 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 313.80 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 259.70 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 292.17 &#8364; </li>
+                                                            </ul>    
+
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Rieti 78 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 104.67 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 121.21 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 159.77 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 132.23 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 148.75 &#8364; </li>
+
+                                                            </ul>
+                                                             
+                                                           <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Viterbo 105 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 131.57 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 152.35 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 200.82 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 166.20 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 186.98 &#8364; </li>
+
+                                                            </ul>
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Porto di Anzio 63 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 88.11 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 102.03 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 134.49 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 111.30 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 125.21 &#8364; </li>
+
+                                                            </ul>
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Aeroporto Internazionale di Roma Fiumicino "Leonardo da Vinci" 29 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 53.45 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 61.89 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 81.59 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 67.52 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 75.96 &#8364; </li>
+
+                                                            </ul>
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Porto di Civitavecchia 79 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 105.39 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 122.02 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 160.85 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 133.11 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 149.75 &#8364; </li>
+                                                            
+                                                            </ul>
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Porto di Fiumicino 33 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 57.63 â‚¬ </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 66.72 â‚¬ </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 87.95 â‚¬  </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 72.80 â‚¬ </li> 
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 81.89 â‚¬ </li>
+                                                            <br><br>
+                                                            </ul>
+                                                        </div> 
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!--- End First Column of Two Columns -->
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="50%" valign="top">
+                            <![endif]-->
+                            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                                <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                    <tr>
+                                        <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;">
+                                            <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                                <tr>
+                                                    <td class="text" style="padding: 10px 0;background-color: #121212;color: azure;">
+                                                        <div class="box-boder" style="border: 4px solid #1B6EB1;padding-right: 4px;padding-top: 5px;">
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Transfer Milano</p>
+                                                        </div>
+                                                        <div class="box-boder" style="border-top: 0;border: 4px solid #1B6EB1;padding-right: 4px;padding-top: 5px;">
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Latina 72 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 97.78 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 113.23 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 149.26 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 123.52 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 138.97 &#8364;</li>
+                                                            </ul>    
+
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Frosinone 89 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 113.69 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 131.63 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 173.52 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 143.60 &#8364;</li> 
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 161.55 &#8364;</li>
+
+                                                            </ul>
+                                                            
+                                                             <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Aeroporto Militare di Pomezia Pratica Mare "Mario de Bernardi" 36 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 60.25 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 69.76 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 91.95 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 76.10 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 85.62 &#8364; </li>
+
+                                                            </ul>
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Aeroporto Internazionale di Roma Ciampino "Giovan Battista Pastine" 15 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 37.84 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 43.82 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 57.75 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 47.79 &#8364; </li> 
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 53.76 &#8364; </li>
+                                                            </ul>
+                                                            
+                                                            
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Porto di Marina di Nettuno 66 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 90.17 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 104.41 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 137.63 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 113.91 â‚¬</li>
+                                                                <li> Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 128.14 â‚¬ </li>
+
+                                                            </ul>
+                                                           <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #1B6EB1;">Roma &#8658; Porto di Formia 166 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 197.28 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 228.42 &#8364; </li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 301.10 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 249.19 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 280.35 &#8364; </li>
+
+                                                            </ul>
+                                                            <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 6spx;color: #1B6EB1;">Roma &#8658; Porto di Ostia 38 km</p>
+                                                            <ul> 
+                                                                <li>Auto Economy 3 Passeggeri Max 3 Valigie (Ford, Fiat, Opel, Mercedes) 61.76 &#8364; </li>
+                                                                <li>Auto Prima Classe 3 Passeggeri Max 3 Valigie (Mercedes, BMW, Lancia) 71.50 &#8364;</li>
+                                                                <li>Auto Luxury 3 Passeggeri Max 3 Valigie (Mercedes Classe S, BMW Serie 7) 94.25 &#8364; </li>
+                                                                <li>Van Economy 7-8 Passeggeri Max 5 Valigie (Ford, Fiat, Opel, Mercedes) 78.00 &#8364; </li>
+                                                                <li>Van Prima Classe 7-8 Passeggeri Max 5 Valigie (Mercedes) 87.74 &#8364; </li>
+
+                                                            </ul>
+                                                        </div>    
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!--- End Second Column of Two Columns -->
+                        </td>
+                    </tr> <!--- End Two Column Section -->
+                </table> <!--- End Main Table -->
+                <table class="main-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+                    <tr>
+                        <td class="one-column" style="padding: 0;background-color: #121212;color: azure;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;font-size: 16px;line-height: 20px;text-align: justify;">
+                                        <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;">
+                                            <tr>
+                                                <td class="text" style="padding: 0;background-color: #121212;color: azure;">
+                                                    <div><em>
+                                                    
+                                                        <p style="margin: 0;">*Auto Economy Ã¨ un autoveicolo 3 Passeggeri di qualsiasi Marca immatricolato tra il 1998 e il 2018, oppure una Mercedes o una BMW immatricolata tra il 1998 e il 2011.</p>
+<p style="margin: 0;">*Auto Prima Classe Ã¨ un autoveicolo 3 Passeggeri Mercedes o BMW immatricolato tra il 2011 e il 2018.</p>
+
+<p style="margin: 0;">*Auto Luxury Ã¨ un autoveicolo 3 Passeggeri Mercedes Classe S o BMW Serie 7 immatricolato tra il 2011 e il 2018. *Van Economy Ã¨ un autoveicolo 7-8 Passeggeri di qualsiasi Marca immatricolato tra il 1998 e il 2018, oppure una Mercedes immatricolata tra il 1998 e il 2011.</p>
+
+<p style="margin: 0;">*Van Prima Classe Ã¨ un autoveicolo 7-8 Passeggeri Mercedes immatricolato tra il 2011 e il 2018.</p>
+
+<p style="margin: 0;">A questo indirizzo puoi consultare il Tariffario Completo Italiano www.apollotransfert.com/tariffe-transfer</p>
+
+<p style="margin: 0;">Grazie, ApolloTransfert</p>
+
+                                                    </em></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                
+
+                
+                <table class="main-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+                    <tr>
+                        <td class="one-column" style="padding: 0;background-color: #121212;color: azure;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="inner-td" style="padding: 10px;background-color: #121212;color: azure;font-size: 16px;line-height: 20px;text-align: justify;">
+                                        <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;">
+                                            <tr>
+                                                <td class="text" style="padding: 0;background-color: #121212;color: azure;">
+                                                    <div>    
+                                                        <p style="margin-bottom: 1px;margin: 0;">Matteo Manili</p>
+                                                        <p style="margin-top: 1px;margin-bottom: 1px;margin: 0;">Responsabile | ApolloTransfert</p>
+                                                        <p style="margin-top: 2px;margin-bottom: 1px;margin: 0;"><a href="tel:3289126869" style="color: #1B6EB1; text-decoration: none ">T.328.912.6869</a></p>
+                                                        <p style="margin-top: 1px;margin-bottom: 20px;margin: 0;"><a href="https://www.apollotransfert.com/" style="color: #1B6EB1; text-decoration: none ">www.apollotransfert.com</a></p>
+                                                    </div>
+                                                </td>
+                                            </tr>    
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="outer-table-3" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 670px;margin: 22px auto;background-color: #C2C1C1;border-top: 3px solid #81B9C3;">
+                    <tr>
+                        <td class="one-column" style="padding: 0;background-color: #121212;color: azure;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="footer" style="padding: 0;background-color: #C2C1C1;color: #FFF;width: 100%;margin: 0 auto;">
+                                        <p class="footer" style="margin: 0 auto;width: 100%;background-color: #C2C1C1;color: black!important;text-align: center;line-height: 30px;padding-bottom: 4%;">Sent by <a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">Medium</a> 799 Market Street, 5th floor, San Francisco, CA 94103<br><a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">Unsubcribe</a>&middot;<a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">Switch to the Weekly Digest</a>&middot;<a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">Careers</a>&middot;<a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">Help center</a>&middot;<a href="https://www.apollotransfert.com/" style="color: #1B6EB1;text-decoration: none;">Privacy policy</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table> <!--- End Main Table -->    
+            </div>
+        </div>
+        
+	</body>
+    
+</html>

@@ -1,0 +1,18 @@
+# www.robotstxt.org/
+
+User-agent: Adsbot-Google
+User-agent: *
+Disallow: /agenda-autista
+Disallow: /insert-tariffe
+Disallow: /prove
+Disallow: /localizzaPosizione
+Disallow: /CollaboratoriProvinciaAutistaList
+Disallow: /memorizzaIpUtente
+Disallow: /CollaboratoriRegioneAutistaList
+Disallow: /CollaboratoriInfoCorsaMedia
+Disallow: /inviaSmsCorsaCliente
+Disallow: /inviaEmailCorsaCliente
+Disallow: /ChiSiamoInfo
+Disallow: /unsubscribe
+Disallow: /submit-news-letter
+Sitemap: https://www.apollotransfert.com/sitemap.xml
